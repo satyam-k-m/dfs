@@ -1,0 +1,13 @@
+default:
+  outputs:
+    dev:
+      account: emuqifz-vy24542
+      database: external_db
+      password: Sattu@1998
+      role: accountadmin
+      schema: final_sales
+      threads: 1
+      type: snowflake
+      user: satyamkumar
+      warehouse: learn_dbt_dw
+  target: dev

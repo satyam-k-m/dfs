@@ -1,0 +1,47 @@
+[2023-06-22T11:48:07.548+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.orders manual__2023-06-22T11:47:59.688254+00:00 [queued]>
+[2023-06-22T11:48:07.556+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.orders manual__2023-06-22T11:47:59.688254+00:00 [queued]>
+[2023-06-22T11:48:07.557+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-22T11:48:07.589+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): dbt_task.source.development.sales_stage.orders> on 2023-06-22 11:47:59.688254+00:00
+[2023-06-22T11:48:07.593+0000] {standard_task_runner.py:57} INFO - Started process 83327 to run task
+[2023-06-22T11:48:07.597+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'dbt_task.source.development.sales_stage.orders', 'manual__2023-06-22T11:47:59.688254+00:00', '--job-id', '221', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp1e3a2bin']
+[2023-06-22T11:48:07.598+0000] {standard_task_runner.py:85} INFO - Job 221: Subtask dbt_task.source.development.sales_stage.orders
+[2023-06-22T11:48:07.654+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.orders manual__2023-06-22T11:47:59.688254+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-22T11:48:07.892+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='dbt_task.source.development.sales_stage.orders' AIRFLOW_CTX_EXECUTION_DATE='2023-06-22T11:47:59.688254+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-22T11:47:59.688254+00:00'
+[2023-06-22T11:48:07.893+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-22T11:48:07.894+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "cd /home/satyam/airflow/dags/dbt/ && dbt run --models bronze_orders --vars 'run_date: 2023-06-22T00:00:00+00:00'"]
+[2023-06-22T11:48:07.902+0000] {subprocess.py:86} INFO - Output:
+[2023-06-22T11:48:10.460+0000] {subprocess.py:93} INFO - [0m11:48:10  Running with dbt=1.5.1
+[2023-06-22T11:48:11.063+0000] {subprocess.py:93} INFO - [0m11:48:11  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2023-06-22T11:48:11.063+0000] {subprocess.py:93} INFO - There are 3 unused configuration paths:
+[2023-06-22T11:48:11.064+0000] {subprocess.py:93} INFO - - models.development.staging
+[2023-06-22T11:48:11.064+0000] {subprocess.py:93} INFO - - models.development.bronze
+[2023-06-22T11:48:11.064+0000] {subprocess.py:93} INFO - - models.development.intermediate
+[2023-06-22T11:48:11.083+0000] {subprocess.py:93} INFO - [0m11:48:11  Found 7 models, 0 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-22T11:48:11.086+0000] {subprocess.py:93} INFO - [0m11:48:11
+[2023-06-22T11:48:12.562+0000] {subprocess.py:93} INFO - [0m11:48:12  Concurrency: 1 threads (target='dev')
+[2023-06-22T11:48:12.562+0000] {subprocess.py:93} INFO - [0m11:48:12
+[2023-06-22T11:48:12.568+0000] {subprocess.py:93} INFO - [0m11:48:12  1 of 1 START sql incremental model final_sales.bronze_orders ................... [RUN]
+[2023-06-22T11:48:13.144+0000] {subprocess.py:93} INFO - [0m11:48:13  1 of 1 ERROR creating sql incremental model final_sales.bronze_orders .......... [[31mERROR[0m in 0.57s]
+[2023-06-22T11:48:13.149+0000] {subprocess.py:93} INFO - [0m11:48:13
+[2023-06-22T11:48:13.150+0000] {subprocess.py:93} INFO - [0m11:48:13  Finished running 1 incremental model in 0 hours 0 minutes and 2.06 seconds (2.06s).
+[2023-06-22T11:48:13.235+0000] {subprocess.py:93} INFO - [0m11:48:13
+[2023-06-22T11:48:13.235+0000] {subprocess.py:93} INFO - [0m11:48:13  [31mCompleted with 1 error and 0 warnings:[0m
+[2023-06-22T11:48:13.236+0000] {subprocess.py:93} INFO - [0m11:48:13
+[2023-06-22T11:48:13.236+0000] {subprocess.py:93} INFO - [0m11:48:13  [33mDatabase Error in model bronze_orders (models/sales/bronze/bronze_orders.sql)[0m
+[2023-06-22T11:48:13.237+0000] {subprocess.py:93} INFO - [0m11:48:13    001003 (42000): SQL compilation error:
+[2023-06-22T11:48:13.237+0000] {subprocess.py:93} INFO - [0m11:48:13    syntax error line 7 at position 16 unexpected '00'.
+[2023-06-22T11:48:13.238+0000] {subprocess.py:93} INFO - [0m11:48:13    syntax error line 7 at position 28 unexpected '00'.
+[2023-06-22T11:48:13.238+0000] {subprocess.py:93} INFO - [0m11:48:13    compiled Code at target/run/development/models/sales/bronze/bronze_orders.sql
+[2023-06-22T11:48:13.239+0000] {subprocess.py:93} INFO - [0m11:48:13
+[2023-06-22T11:48:13.239+0000] {subprocess.py:93} INFO - [0m11:48:13  Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[2023-06-22T11:48:14.567+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2023-06-22T11:48:14.576+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2023-06-22T11:48:14.579+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=airflow_dbt, task_id=dbt_task.source.development.sales_stage.orders, execution_date=20230622T114759, start_date=20230622T114807, end_date=20230622T114814
+[2023-06-22T11:48:14.603+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 221 for task dbt_task.source.development.sales_stage.orders (Bash command failed. The command returned a non-zero exit code 1.; 83327)
+[2023-06-22T11:48:14.627+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-22T11:48:14.777+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

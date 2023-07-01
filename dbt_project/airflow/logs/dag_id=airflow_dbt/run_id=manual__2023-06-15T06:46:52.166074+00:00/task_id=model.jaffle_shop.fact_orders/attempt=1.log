@@ -1,0 +1,30 @@
+[2023-06-15T06:47:18.540+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.model.jaffle_shop.fact_orders manual__2023-06-15T06:46:52.166074+00:00 [queued]>
+[2023-06-15T06:47:18.546+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.model.jaffle_shop.fact_orders manual__2023-06-15T06:46:52.166074+00:00 [queued]>
+[2023-06-15T06:47:18.547+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-15T06:47:18.575+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): model.jaffle_shop.fact_orders> on 2023-06-15 06:46:52.166074+00:00
+[2023-06-15T06:47:18.579+0000] {standard_task_runner.py:57} INFO - Started process 18933 to run task
+[2023-06-15T06:47:18.584+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'model.jaffle_shop.fact_orders', 'manual__2023-06-15T06:46:52.166074+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpzb1o3pdn']
+[2023-06-15T06:47:18.585+0000] {standard_task_runner.py:85} INFO - Job 45: Subtask model.jaffle_shop.fact_orders
+[2023-06-15T06:47:18.640+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.model.jaffle_shop.fact_orders manual__2023-06-15T06:46:52.166074+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-15T06:47:18.724+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='model.jaffle_shop.fact_orders' AIRFLOW_CTX_EXECUTION_DATE='2023-06-15T06:46:52.166074+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-15T06:46:52.166074+00:00'
+[2023-06-15T06:47:18.727+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-15T06:47:18.727+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/satyam/airflow/dags/dbt/ && dbt run --models fact_orders']
+[2023-06-15T06:47:18.736+0000] {subprocess.py:86} INFO - Output:
+[2023-06-15T06:47:20.689+0000] {subprocess.py:93} INFO - [0m06:47:20  Running with dbt=1.5.1
+[2023-06-15T06:47:21.063+0000] {subprocess.py:93} INFO - [0m06:47:21  Found 5 models, 0 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-15T06:47:21.065+0000] {subprocess.py:93} INFO - [0m06:47:21
+[2023-06-15T06:47:22.060+0000] {subprocess.py:93} INFO - [0m06:47:22  Concurrency: 1 threads (target='dev')
+[2023-06-15T06:47:22.061+0000] {subprocess.py:93} INFO - [0m06:47:22
+[2023-06-15T06:47:22.066+0000] {subprocess.py:93} INFO - [0m06:47:22  1 of 1 START sql table model learn_dbt.fact_orders ............................. [RUN]
+[2023-06-15T06:47:23.463+0000] {subprocess.py:93} INFO - [0m06:47:23  1 of 1 OK created sql table model learn_dbt.fact_orders ........................ [[32mSUCCESS 1[0m in 1.40s]
+[2023-06-15T06:47:23.466+0000] {subprocess.py:93} INFO - [0m06:47:23
+[2023-06-15T06:47:23.467+0000] {subprocess.py:93} INFO - [0m06:47:23  Finished running 1 table model in 0 hours 0 minutes and 2.40 seconds (2.40s).
+[2023-06-15T06:47:23.476+0000] {subprocess.py:93} INFO - [0m06:47:23
+[2023-06-15T06:47:23.477+0000] {subprocess.py:93} INFO - [0m06:47:23  [32mCompleted successfully[0m
+[2023-06-15T06:47:23.477+0000] {subprocess.py:93} INFO - [0m06:47:23
+[2023-06-15T06:47:23.478+0000] {subprocess.py:93} INFO - [0m06:47:23  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2023-06-15T06:47:24.798+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-15T06:47:24.830+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=airflow_dbt, task_id=model.jaffle_shop.fact_orders, execution_date=20230615T064652, start_date=20230615T064718, end_date=20230615T064724
+[2023-06-15T06:47:24.888+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-15T06:47:24.957+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

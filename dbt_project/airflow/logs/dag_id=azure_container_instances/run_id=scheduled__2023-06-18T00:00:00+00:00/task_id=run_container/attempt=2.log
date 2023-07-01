@@ -1,0 +1,26 @@
+[2023-06-19T10:49:49.413+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: azure_container_instances.run_container scheduled__2023-06-18T00:00:00+00:00 [queued]>
+[2023-06-19T10:49:49.420+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: azure_container_instances.run_container scheduled__2023-06-18T00:00:00+00:00 [queued]>
+[2023-06-19T10:49:49.420+0000] {taskinstance.py:1308} INFO - Starting attempt 2 of 2
+[2023-06-19T10:49:49.446+0000] {taskinstance.py:1327} INFO - Executing <Task(AzureContainerInstancesOperator): run_container> on 2023-06-18 00:00:00+00:00
+[2023-06-19T10:49:49.450+0000] {standard_task_runner.py:57} INFO - Started process 27042 to run task
+[2023-06-19T10:49:49.455+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'azure_container_instances', 'run_container', 'scheduled__2023-06-18T00:00:00+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/dbt_docker.py', '--cfg-path', '/tmp/tmpuijvrhnp']
+[2023-06-19T10:49:49.456+0000] {standard_task_runner.py:85} INFO - Job 92: Subtask run_container
+[2023-06-19T10:49:49.522+0000] {task_command.py:410} INFO - Running <TaskInstance: azure_container_instances.run_container scheduled__2023-06-18T00:00:00+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-19T10:49:49.599+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='azure_container_instances' AIRFLOW_CTX_TASK_ID='run_container' AIRFLOW_CTX_EXECUTION_DATE='2023-06-18T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-18T00:00:00+00:00'
+[2023-06-19T10:49:49.614+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/satyam/.local/lib/python3.8/site-packages/airflow/providers/microsoft/azure/operators/container_instances.py", line 192, in execute
+    self._ci_hook = AzureContainerInstanceHook(azure_conn_id=self.ci_conn_id)
+  File "/home/satyam/.local/lib/python3.8/site-packages/airflow/providers/microsoft/azure/hooks/container_instance.py", line 50, in __init__
+    self.connection = self.get_conn()
+  File "/home/satyam/.local/lib/python3.8/site-packages/airflow/providers/microsoft/azure/hooks/base_azure.py", line 96, in get_conn
+    conn = self.get_connection(self.conn_id)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/hooks/base.py", line 72, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/connection.py", line 434, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `azure_container_conn_id` isn't defined
+[2023-06-19T10:49:49.617+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=azure_container_instances, task_id=run_container, execution_date=20230618T000000, start_date=20230619T104949, end_date=20230619T104949
+[2023-06-19T10:49:49.644+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 92 for task run_container (The conn_id `azure_container_conn_id` isn't defined; 27042)
+[2023-06-19T10:49:49.667+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-19T10:49:49.684+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

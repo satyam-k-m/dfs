@@ -1,0 +1,30 @@
+[2023-06-15T09:27:36.839+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.model.jaffle_shop.stg_orders manual__2023-06-15T09:27:34.111690+00:00 [queued]>
+[2023-06-15T09:27:36.845+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.model.jaffle_shop.stg_orders manual__2023-06-15T09:27:34.111690+00:00 [queued]>
+[2023-06-15T09:27:36.845+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-15T09:27:36.866+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): model.jaffle_shop.stg_orders> on 2023-06-15 09:27:34.111690+00:00
+[2023-06-15T09:27:36.869+0000] {standard_task_runner.py:57} INFO - Started process 48005 to run task
+[2023-06-15T09:27:36.873+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'model.jaffle_shop.stg_orders', 'manual__2023-06-15T09:27:34.111690+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpacnhqher']
+[2023-06-15T09:27:36.873+0000] {standard_task_runner.py:85} INFO - Job 52: Subtask model.jaffle_shop.stg_orders
+[2023-06-15T09:27:36.922+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.model.jaffle_shop.stg_orders manual__2023-06-15T09:27:34.111690+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-15T09:27:37.008+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='model.jaffle_shop.stg_orders' AIRFLOW_CTX_EXECUTION_DATE='2023-06-15T09:27:34.111690+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-15T09:27:34.111690+00:00'
+[2023-06-15T09:27:37.010+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-15T09:27:37.010+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/satyam/airflow/dags/dbt/ && dbt run --models stg_orders']
+[2023-06-15T09:27:37.018+0000] {subprocess.py:86} INFO - Output:
+[2023-06-15T09:27:38.969+0000] {subprocess.py:93} INFO - [0m09:27:38  Running with dbt=1.5.1
+[2023-06-15T09:27:39.339+0000] {subprocess.py:93} INFO - [0m09:27:39  Found 5 models, 0 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-15T09:27:39.341+0000] {subprocess.py:93} INFO - [0m09:27:39
+[2023-06-15T09:27:40.990+0000] {subprocess.py:93} INFO - [0m09:27:40  Concurrency: 1 threads (target='dev')
+[2023-06-15T09:27:40.990+0000] {subprocess.py:93} INFO - [0m09:27:40
+[2023-06-15T09:27:40.995+0000] {subprocess.py:93} INFO - [0m09:27:40  1 of 1 START sql view model learn_dbt.stg_orders ............................... [RUN]
+[2023-06-15T09:27:41.581+0000] {subprocess.py:93} INFO - [0m09:27:41  1 of 1 OK created sql view model learn_dbt.stg_orders .......................... [[32mSUCCESS 1[0m in 0.58s]
+[2023-06-15T09:27:41.584+0000] {subprocess.py:93} INFO - [0m09:27:41
+[2023-06-15T09:27:41.585+0000] {subprocess.py:93} INFO - [0m09:27:41  Finished running 1 view model in 0 hours 0 minutes and 2.24 seconds (2.24s).
+[2023-06-15T09:27:41.593+0000] {subprocess.py:93} INFO - [0m09:27:41
+[2023-06-15T09:27:41.594+0000] {subprocess.py:93} INFO - [0m09:27:41  [32mCompleted successfully[0m
+[2023-06-15T09:27:41.594+0000] {subprocess.py:93} INFO - [0m09:27:41
+[2023-06-15T09:27:41.595+0000] {subprocess.py:93} INFO - [0m09:27:41  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2023-06-15T09:27:43.262+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-15T09:27:43.289+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=airflow_dbt, task_id=model.jaffle_shop.stg_orders, execution_date=20230615T092734, start_date=20230615T092736, end_date=20230615T092743
+[2023-06-15T09:27:43.341+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-15T09:27:43.359+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

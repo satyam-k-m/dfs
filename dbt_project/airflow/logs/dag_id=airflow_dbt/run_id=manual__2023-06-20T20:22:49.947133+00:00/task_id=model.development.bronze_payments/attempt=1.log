@@ -1,0 +1,28 @@
+[2023-06-20T20:22:59.904+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.model.development.bronze_payments manual__2023-06-20T20:22:49.947133+00:00 [queued]>
+[2023-06-20T20:22:59.911+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.model.development.bronze_payments manual__2023-06-20T20:22:49.947133+00:00 [queued]>
+[2023-06-20T20:22:59.911+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-20T20:22:59.936+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): model.development.bronze_payments> on 2023-06-20 20:22:49.947133+00:00
+[2023-06-20T20:22:59.940+0000] {standard_task_runner.py:57} INFO - Started process 15816 to run task
+[2023-06-20T20:22:59.944+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'model.development.bronze_payments', 'manual__2023-06-20T20:22:49.947133+00:00', '--job-id', '162', '--raw', '--subdir', 'DAGS_FOLDER/test_dag.py', '--cfg-path', '/tmp/tmp6m_z_t5i']
+[2023-06-20T20:22:59.945+0000] {standard_task_runner.py:85} INFO - Job 162: Subtask model.development.bronze_payments
+[2023-06-20T20:22:59.994+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.model.development.bronze_payments manual__2023-06-20T20:22:49.947133+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-20T20:23:00.212+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='model.development.bronze_payments' AIRFLOW_CTX_EXECUTION_DATE='2023-06-20T20:22:49.947133+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-20T20:22:49.947133+00:00'
+[2023-06-20T20:23:00.213+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-20T20:23:00.214+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n                cd /home/satyam/airflow/dags/dbt/ &&\n                dbt --no-write-json run --target prod --models bronze_payments\n                ']
+[2023-06-20T20:23:00.221+0000] {subprocess.py:86} INFO - Output:
+[2023-06-20T20:23:02.628+0000] {subprocess.py:93} INFO - [0m20:23:02  Running with dbt=1.5.1
+[2023-06-20T20:23:02.632+0000] {subprocess.py:93} INFO - [0m20:23:02  Encountered an error:
+[2023-06-20T20:23:02.632+0000] {subprocess.py:93} INFO - Runtime Error
+[2023-06-20T20:23:02.632+0000] {subprocess.py:93} INFO -   The profile 'default' does not have a target named 'prod'. The valid target names for this profile are:
+[2023-06-20T20:23:02.632+0000] {subprocess.py:93} INFO -    - dev
+[2023-06-20T20:23:03.673+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2023-06-20T20:23:03.682+0000] {taskinstance.py:1824} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2023-06-20T20:23:03.684+0000] {taskinstance.py:1345} INFO - Marking task as FAILED. dag_id=airflow_dbt, task_id=model.development.bronze_payments, execution_date=20230620T202249, start_date=20230620T202259, end_date=20230620T202303
+[2023-06-20T20:23:03.709+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 162 for task model.development.bronze_payments (Bash command failed. The command returned a non-zero exit code 2.; 15816)
+[2023-06-20T20:23:03.727+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 1
+[2023-06-20T20:23:03.749+0000] {taskinstance.py:2651} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,16 @@
+[2023-06-23T14:52:10.125+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.wait_for_blob manual__2023-06-23T14:52:06.867856+00:00 [queued]>
+[2023-06-23T14:52:10.132+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.wait_for_blob manual__2023-06-23T14:52:06.867856+00:00 [queued]>
+[2023-06-23T14:52:10.132+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-23T14:52:10.161+0000] {taskinstance.py:1327} INFO - Executing <Task(WasbBlobSensor): wait_for_blob> on 2023-06-23 14:52:06.867856+00:00
+[2023-06-23T14:52:10.166+0000] {standard_task_runner.py:57} INFO - Started process 20065 to run task
+[2023-06-23T14:52:10.174+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'wait_for_blob', 'manual__2023-06-23T14:52:06.867856+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmpv44q9ayw']
+[2023-06-23T14:52:10.175+0000] {standard_task_runner.py:85} INFO - Job 249: Subtask wait_for_blob
+[2023-06-23T14:52:10.228+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.wait_for_blob manual__2023-06-23T14:52:06.867856+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-23T14:52:10.519+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='wait_for_blob' AIRFLOW_CTX_EXECUTION_DATE='2023-06-23T14:52:06.867856+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-23T14:52:06.867856+00:00'
+[2023-06-23T14:52:10.520+0000] {wasb.py:70} INFO - Poking for blob: trigger.txt
+ in wasb://input
+[2023-06-23T14:52:10.544+0000] {base.py:73} INFO - Using connection ID 'azure_blob' for task execution.
+[2023-06-23T14:52:10.827+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-06-23T14:52:10.833+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=airflow_dbt, task_id=wait_for_blob, execution_date=20230623T145206, start_date=20230623T145210, end_date=20230623T145210
+[2023-06-23T14:52:10.904+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-23T14:52:11.072+0000] {taskinstance.py:2651} INFO - 4 downstream tasks scheduled from follow-on schedule check

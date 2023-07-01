@@ -1,0 +1,16 @@
+[2023-06-12T12:20:27.633+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: blob_sensor_dag.wait_for_blob manual__2023-06-12T12:20:24.887268+00:00 [queued]>
+[2023-06-12T12:20:27.640+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: blob_sensor_dag.wait_for_blob manual__2023-06-12T12:20:24.887268+00:00 [queued]>
+[2023-06-12T12:20:27.640+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-12T12:20:27.659+0000] {taskinstance.py:1327} INFO - Executing <Task(WasbBlobSensor): wait_for_blob> on 2023-06-12 12:20:24.887268+00:00
+[2023-06-12T12:20:27.662+0000] {standard_task_runner.py:57} INFO - Started process 7064 to run task
+[2023-06-12T12:20:27.666+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'blob_sensor_dag', 'wait_for_blob', 'manual__2023-06-12T12:20:24.887268+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/blob_sensor_dag.py', '--cfg-path', '/tmp/tmpbdrhss2b']
+[2023-06-12T12:20:27.666+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask wait_for_blob
+[2023-06-12T12:20:27.709+0000] {task_command.py:410} INFO - Running <TaskInstance: blob_sensor_dag.wait_for_blob manual__2023-06-12T12:20:24.887268+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-12T12:20:27.778+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='blob_sensor_dag' AIRFLOW_CTX_TASK_ID='wait_for_blob' AIRFLOW_CTX_EXECUTION_DATE='2023-06-12T12:20:24.887268+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-12T12:20:24.887268+00:00'
+[2023-06-12T12:20:27.780+0000] {wasb.py:70} INFO - Poking for blob: checksum.txt
+ in wasb://input
+[2023-06-12T12:20:27.784+0000] {base.py:73} INFO - Using connection ID 'azure_blob' for task execution.
+[2023-06-12T12:20:28.113+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-06-12T12:20:28.137+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=blob_sensor_dag, task_id=wait_for_blob, execution_date=20230612T122024, start_date=20230612T122027, end_date=20230612T122028
+[2023-06-12T12:20:28.199+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-12T12:20:28.217+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check

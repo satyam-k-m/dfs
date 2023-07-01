@@ -1,0 +1,875 @@
+[2023-06-17T16:53:19.499+0000] {processor.py:157} INFO - Started process (PID=2558) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:53:19.500+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:53:19.501+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:53:19.501+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:53:19.503+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:53:19.516+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T16:54:09.551+0000] {processor.py:157} INFO - Started process (PID=2912) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:54:09.553+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:54:09.553+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:54:09.553+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:54:09.556+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:54:09.568+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T16:55:06.274+0000] {processor.py:157} INFO - Started process (PID=3567) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:06.275+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:55:06.276+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:55:06.276+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:06.278+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:06.292+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T16:55:59.836+0000] {processor.py:157} INFO - Started process (PID=4282) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:59.838+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:55:59.838+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:55:59.838+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:59.840+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:55:59.853+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T16:56:52.825+0000] {processor.py:157} INFO - Started process (PID=4934) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:56:52.826+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:56:52.827+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:56:52.827+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:56:52.829+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:56:52.842+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T16:57:47.554+0000] {processor.py:157} INFO - Started process (PID=5647) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:57:47.556+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:57:47.557+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:57:47.557+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:57:47.560+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:57:47.577+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.028 seconds
+[2023-06-17T16:58:43.903+0000] {processor.py:157} INFO - Started process (PID=6386) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:58:43.905+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:58:43.905+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:58:43.905+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:58:43.908+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:58:43.921+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T16:59:40.458+0000] {processor.py:157} INFO - Started process (PID=7133) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:59:40.460+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T16:59:40.460+0000] {logging_mixin.py:149} INFO - [2023-06-17T16:59:40.460+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:59:40.463+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T16:59:40.476+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:00:32.784+0000] {processor.py:157} INFO - Started process (PID=7546) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:00:32.785+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:00:32.786+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:00:32.786+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:00:32.788+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:00:32.802+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:01:17.664+0000] {processor.py:157} INFO - Started process (PID=7650) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:01:17.666+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:01:17.667+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:01:17.666+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:01:17.669+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:01:17.682+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:02:05.645+0000] {processor.py:157} INFO - Started process (PID=7829) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:05.647+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:02:05.648+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:02:05.648+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:05.650+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:05.663+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:02:48.825+0000] {processor.py:157} INFO - Started process (PID=7871) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:48.827+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:02:48.827+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:02:48.827+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:48.830+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:02:48.842+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:03:35.580+0000] {processor.py:157} INFO - Started process (PID=8038) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:03:35.582+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:03:35.583+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:03:35.583+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:03:35.585+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:03:35.600+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:04:19.966+0000] {processor.py:157} INFO - Started process (PID=8260) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:04:19.967+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:04:19.968+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:04:19.968+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:04:19.971+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:04:19.984+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:05:05.909+0000] {processor.py:157} INFO - Started process (PID=8372) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:05.910+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:05:05.911+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:05:05.911+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:05.914+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:05.927+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:05:47.811+0000] {processor.py:157} INFO - Started process (PID=8413) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:47.815+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:05:47.816+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:05:47.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:47.818+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:05:47.832+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:06:32.056+0000] {processor.py:157} INFO - Started process (PID=8647) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:06:32.057+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:06:32.058+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:06:32.058+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:06:32.060+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:06:32.073+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:07:18.594+0000] {processor.py:157} INFO - Started process (PID=8751) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:07:18.596+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:07:18.597+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:07:18.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:07:18.599+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:07:18.612+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:08:05.677+0000] {processor.py:157} INFO - Started process (PID=8917) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:05.678+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:08:05.679+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:08:05.679+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:05.681+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:05.694+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:08:52.018+0000] {processor.py:157} INFO - Started process (PID=8961) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:52.019+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:08:52.020+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:08:52.019+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:52.022+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:08:52.035+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:09:50.084+0000] {processor.py:157} INFO - Started process (PID=9085) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:09:50.086+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:09:50.087+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:09:50.086+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:09:50.089+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:09:50.102+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:10:35.664+0000] {processor.py:157} INFO - Started process (PID=9188) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:10:35.666+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:10:35.667+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:10:35.666+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:10:35.669+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:10:35.682+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:11:18.654+0000] {processor.py:157} INFO - Started process (PID=9293) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:11:18.656+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:11:18.657+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:11:18.656+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:11:18.659+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:11:18.672+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:12:04.300+0000] {processor.py:157} INFO - Started process (PID=9396) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:04.302+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:12:04.302+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:12:04.302+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:04.305+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:04.320+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:12:52.434+0000] {processor.py:157} INFO - Started process (PID=9442) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:52.436+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:12:52.436+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:12:52.436+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:52.438+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:12:52.450+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.020 seconds
+[2023-06-17T17:13:52.564+0000] {processor.py:157} INFO - Started process (PID=9625) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:13:52.566+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:13:52.566+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:13:52.566+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:13:52.568+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:13:52.582+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:14:38.444+0000] {processor.py:157} INFO - Started process (PID=9768) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:14:38.445+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:14:38.446+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:14:38.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:14:38.448+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:14:38.461+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:15:22.689+0000] {processor.py:157} INFO - Started process (PID=9880) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:15:22.691+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:15:22.692+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:15:22.691+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:15:22.694+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:15:22.708+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:16:05.899+0000] {processor.py:157} INFO - Started process (PID=9981) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:05.901+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:16:05.902+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:16:05.901+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:05.904+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:05.917+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:16:50.591+0000] {processor.py:157} INFO - Started process (PID=10097) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:50.593+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:16:50.594+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:16:50.594+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:50.597+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:16:50.611+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:17:34.433+0000] {processor.py:157} INFO - Started process (PID=10203) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:17:34.435+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:17:34.436+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:17:34.435+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:17:34.438+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:17:34.451+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:18:17.461+0000] {processor.py:157} INFO - Started process (PID=10366) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:18:17.462+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:18:17.463+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:18:17.463+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:18:17.465+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:18:17.479+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:19:04.853+0000] {processor.py:157} INFO - Started process (PID=10603) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:04.854+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:19:04.869+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:19:04.855+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:04.872+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:04.886+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.037 seconds
+[2023-06-17T17:19:50.645+0000] {processor.py:157} INFO - Started process (PID=10652) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:50.646+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:19:50.647+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:19:50.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:50.649+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:19:50.663+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:20:37.879+0000] {processor.py:157} INFO - Started process (PID=10757) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:20:37.881+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:20:37.882+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:20:37.881+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:20:37.884+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:20:37.898+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:21:21.518+0000] {processor.py:157} INFO - Started process (PID=10865) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:21:21.520+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:21:21.520+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:21:21.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:21:21.522+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:21:21.537+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:22:06.626+0000] {processor.py:157} INFO - Started process (PID=10970) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:06.627+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:22:06.628+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:22:06.628+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:06.631+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:06.648+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T17:22:53.818+0000] {processor.py:157} INFO - Started process (PID=11016) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:53.820+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:22:53.820+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:22:53.820+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:53.822+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:22:53.835+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:23:41.243+0000] {processor.py:157} INFO - Started process (PID=11184) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:23:41.245+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:23:41.245+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:23:41.245+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:23:41.249+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:23:41.264+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:24:28.110+0000] {processor.py:157} INFO - Started process (PID=11296) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:24:28.111+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:24:28.112+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:24:28.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:24:28.114+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:24:28.128+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:25:14.940+0000] {processor.py:157} INFO - Started process (PID=11407) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:25:14.941+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:25:14.942+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:25:14.942+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:25:14.944+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:25:14.957+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:26:01.206+0000] {processor.py:157} INFO - Started process (PID=11515) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:01.207+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:26:01.208+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:26:01.208+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:01.210+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:01.224+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:26:46.053+0000] {processor.py:157} INFO - Started process (PID=11561) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:46.055+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:26:46.056+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:26:46.056+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:46.058+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:26:46.073+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:27:32.090+0000] {processor.py:157} INFO - Started process (PID=11726) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:27:32.091+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:27:32.092+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:27:32.091+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:27:32.093+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:27:32.106+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:28:15.067+0000] {processor.py:157} INFO - Started process (PID=12195) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:15.069+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:28:15.070+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:28:15.070+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:15.072+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:15.088+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:28:57.892+0000] {processor.py:157} INFO - Started process (PID=12359) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:57.894+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:28:57.895+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:28:57.894+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:57.897+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:28:57.910+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:29:42.060+0000] {processor.py:157} INFO - Started process (PID=12462) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:29:42.061+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:29:42.062+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:29:42.062+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:29:42.065+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:29:42.078+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:30:28.969+0000] {processor.py:157} INFO - Started process (PID=12570) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:30:28.971+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:30:28.972+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:30:28.971+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:30:28.974+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:30:28.987+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:31:14.564+0000] {processor.py:157} INFO - Started process (PID=12676) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:31:14.566+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:31:14.566+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:31:14.566+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:31:14.569+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:31:14.583+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:33:06.086+0000] {processor.py:157} INFO - Started process (PID=13351) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:06.087+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:33:06.088+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:33:06.088+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:06.090+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:06.103+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:33:55.775+0000] {processor.py:157} INFO - Started process (PID=13484) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:55.777+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:33:55.777+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:33:55.777+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:55.779+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:33:55.793+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:34:45.562+0000] {processor.py:157} INFO - Started process (PID=13616) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:34:45.564+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:34:45.564+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:34:45.564+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:34:45.567+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:34:45.580+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:39:47.675+0000] {processor.py:157} INFO - Started process (PID=14636) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:39:47.677+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:39:47.678+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:39:47.678+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:39:47.680+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:39:47.692+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:40:38.028+0000] {processor.py:157} INFO - Started process (PID=14802) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:40:38.029+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:40:38.030+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:40:38.029+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:40:38.032+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:40:38.048+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:41:29.052+0000] {processor.py:157} INFO - Started process (PID=14954) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:41:29.053+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:41:29.054+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:41:29.054+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:41:29.056+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:41:29.070+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:42:12.446+0000] {processor.py:157} INFO - Started process (PID=15002) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:12.448+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:42:12.450+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:42:12.449+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:12.452+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:12.464+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:42:57.948+0000] {processor.py:157} INFO - Started process (PID=15148) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:57.950+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:42:57.951+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:42:57.951+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:57.953+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:42:57.968+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:43:40.725+0000] {processor.py:157} INFO - Started process (PID=15292) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:43:40.727+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:43:40.727+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:43:40.727+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:43:40.729+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:43:40.743+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:44:23.544+0000] {processor.py:157} INFO - Started process (PID=15336) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:44:23.546+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:44:23.547+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:44:23.547+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:44:23.549+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:44:23.562+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:45:05.634+0000] {processor.py:157} INFO - Started process (PID=15589) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:45:05.636+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:45:05.637+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:45:05.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:45:05.639+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:45:05.652+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:46:09.675+0000] {processor.py:157} INFO - Started process (PID=15754) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:09.676+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:46:09.677+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:46:09.677+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:09.679+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:09.696+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T17:46:54.307+0000] {processor.py:157} INFO - Started process (PID=15904) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:54.308+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:46:54.309+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:46:54.309+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:54.311+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:46:54.325+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:47:38.989+0000] {processor.py:157} INFO - Started process (PID=16049) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:47:38.991+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:47:38.992+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:47:38.992+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:47:38.994+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:47:39.009+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T17:48:25.414+0000] {processor.py:157} INFO - Started process (PID=16196) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:48:25.416+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:48:25.416+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:48:25.416+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:48:25.419+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:48:25.432+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:49:10.613+0000] {processor.py:157} INFO - Started process (PID=16241) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:10.614+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:49:10.615+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:49:10.615+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:10.617+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:10.630+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:49:54.478+0000] {processor.py:157} INFO - Started process (PID=16493) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:54.479+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:49:54.480+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:49:54.480+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:54.482+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:49:54.495+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:50:35.361+0000] {processor.py:157} INFO - Started process (PID=16637) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:50:35.362+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:50:35.363+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:50:35.363+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:50:35.365+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:50:35.378+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:51:17.837+0000] {processor.py:157} INFO - Started process (PID=16680) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:51:17.838+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:51:17.840+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:51:17.839+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:51:17.842+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:51:17.859+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.027 seconds
+[2023-06-17T17:52:18.414+0000] {processor.py:157} INFO - Started process (PID=16846) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:52:18.415+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:52:18.416+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:52:18.416+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:52:18.418+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:52:18.435+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:53:03.038+0000] {processor.py:157} INFO - Started process (PID=16994) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:03.040+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:53:03.040+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:53:03.040+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:03.042+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:03.056+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:53:47.105+0000] {processor.py:157} INFO - Started process (PID=17406) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:47.109+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:53:47.111+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:53:47.110+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:47.126+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:53:47.165+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.070 seconds
+[2023-06-17T17:54:38.442+0000] {processor.py:157} INFO - Started process (PID=17671) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:54:38.445+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:54:38.445+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:54:38.445+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:54:38.448+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:54:38.461+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:55:22.014+0000] {processor.py:157} INFO - Started process (PID=17720) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:55:22.016+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:55:22.017+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:55:22.017+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:55:22.021+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:55:22.036+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T17:56:25.790+0000] {processor.py:157} INFO - Started process (PID=17986) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:56:25.792+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:56:25.792+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:56:25.792+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:56:25.794+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:56:25.808+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T17:57:11.936+0000] {processor.py:157} INFO - Started process (PID=18033) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:11.938+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:57:11.938+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:57:11.938+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:11.941+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:11.954+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:57:55.074+0000] {processor.py:157} INFO - Started process (PID=18180) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:55.076+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:57:55.076+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:57:55.076+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:55.078+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:57:55.091+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T17:58:39.368+0000] {processor.py:157} INFO - Started process (PID=18901) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:58:39.370+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:58:39.371+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:58:39.370+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:58:39.373+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:58:39.387+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T17:59:31.678+0000] {processor.py:157} INFO - Started process (PID=19076) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:59:31.680+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T17:59:31.680+0000] {logging_mixin.py:149} INFO - [2023-06-17T17:59:31.680+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:59:31.683+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T17:59:31.696+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:00:26.488+0000] {processor.py:157} INFO - Started process (PID=19378) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:00:26.490+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:00:26.491+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:00:26.490+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:00:26.493+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:00:26.507+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:07:49.260+0000] {processor.py:157} INFO - Started process (PID=1980) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:07:49.263+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:07:49.264+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:07:49.264+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:07:49.266+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:07:49.279+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:08:43.635+0000] {processor.py:157} INFO - Started process (PID=2425) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:08:43.636+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:08:43.637+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:08:43.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:08:43.639+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:08:43.653+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:09:36.227+0000] {processor.py:157} INFO - Started process (PID=2596) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:09:36.228+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:09:36.229+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:09:36.229+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:09:36.232+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:09:36.268+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.045 seconds
+[2023-06-17T18:10:26.940+0000] {processor.py:157} INFO - Started process (PID=2823) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:10:26.942+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:10:26.943+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:10:26.943+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:10:26.945+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:10:26.959+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:11:18.356+0000] {processor.py:157} INFO - Started process (PID=3230) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:11:18.358+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:11:18.359+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:11:18.359+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:11:18.361+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:11:18.374+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:12:05.571+0000] {processor.py:157} INFO - Started process (PID=3402) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:12:05.573+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:12:05.574+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:12:05.574+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:12:05.576+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:12:05.588+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:13:38.681+0000] {processor.py:157} INFO - Started process (PID=4602) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:13:38.682+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:13:38.683+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:13:38.683+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:13:38.685+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:13:38.699+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:14:31.231+0000] {processor.py:157} INFO - Started process (PID=4772) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:14:31.232+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:14:31.233+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:14:31.233+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:14:31.235+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:14:31.248+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:15:19.546+0000] {processor.py:157} INFO - Started process (PID=4819) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:15:19.548+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:15:19.550+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:15:19.550+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:15:19.553+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:15:19.566+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:16:04.965+0000] {processor.py:157} INFO - Started process (PID=4924) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:04.966+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:16:04.967+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:16:04.966+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:04.969+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:04.984+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:16:49.701+0000] {processor.py:157} INFO - Started process (PID=5032) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:49.702+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:16:49.703+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:16:49.703+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:49.706+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:16:49.718+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:17:34.671+0000] {processor.py:157} INFO - Started process (PID=5202) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:17:34.673+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:17:34.674+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:17:34.673+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:17:34.676+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:17:34.689+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:18:19.062+0000] {processor.py:157} INFO - Started process (PID=5305) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:18:19.064+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:18:19.065+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:18:19.065+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:18:19.069+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:18:19.085+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.028 seconds
+[2023-06-17T18:19:06.852+0000] {processor.py:157} INFO - Started process (PID=5473) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:06.854+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:19:06.855+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:19:06.855+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:06.857+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:06.870+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:19:50.750+0000] {processor.py:157} INFO - Started process (PID=5636) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:50.752+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:19:50.753+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:19:50.752+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:50.755+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:19:50.771+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T18:20:35.919+0000] {processor.py:157} INFO - Started process (PID=5741) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:20:35.921+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:20:35.921+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:20:35.921+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:20:35.923+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:20:35.936+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:21:20.412+0000] {processor.py:157} INFO - Started process (PID=5783) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:21:20.414+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:21:20.415+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:21:20.414+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:21:20.417+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:21:20.431+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:22:07.056+0000] {processor.py:157} INFO - Started process (PID=5893) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:07.058+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:22:07.058+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:22:07.058+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:07.061+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:07.076+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:22:53.502+0000] {processor.py:157} INFO - Started process (PID=6058) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:53.505+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:22:53.506+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:22:53.505+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:53.508+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:22:53.521+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:23:39.318+0000] {processor.py:157} INFO - Started process (PID=6224) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:23:39.320+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:23:39.321+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:23:39.320+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:23:39.323+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:23:39.338+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:24:23.583+0000] {processor.py:157} INFO - Started process (PID=6269) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:24:23.585+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:24:23.586+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:24:23.586+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:24:23.588+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:24:23.605+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T18:25:06.556+0000] {processor.py:157} INFO - Started process (PID=6373) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:06.557+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:25:06.558+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:25:06.558+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:06.560+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:06.573+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:25:48.506+0000] {processor.py:157} INFO - Started process (PID=6475) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:48.508+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:25:48.509+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:25:48.508+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:48.510+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:25:48.523+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:26:31.888+0000] {processor.py:157} INFO - Started process (PID=6703) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:26:31.890+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:26:31.891+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:26:31.891+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:26:31.893+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:26:31.908+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:27:17.139+0000] {processor.py:157} INFO - Started process (PID=6811) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:27:17.140+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:27:17.141+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:27:17.141+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:27:17.143+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:27:17.156+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:28:00.103+0000] {processor.py:157} INFO - Started process (PID=6978) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:28:00.105+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:28:00.105+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:28:00.105+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:28:00.108+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:28:00.121+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:29:03.839+0000] {processor.py:157} INFO - Started process (PID=7100) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:03.841+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:29:03.841+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:29:03.841+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:03.844+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:03.858+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:29:49.321+0000] {processor.py:157} INFO - Started process (PID=7204) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:49.322+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:29:49.323+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:29:49.323+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:49.325+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:29:49.340+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:30:32.531+0000] {processor.py:157} INFO - Started process (PID=7368) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:30:32.532+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:30:32.533+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:30:32.533+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:30:32.535+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:30:32.549+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:31:15.859+0000] {processor.py:157} INFO - Started process (PID=7413) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:31:15.861+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:31:15.862+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:31:15.862+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:31:15.864+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:31:15.878+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:32:01.176+0000] {processor.py:157} INFO - Started process (PID=7586) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:01.177+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:32:01.178+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:32:01.178+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:01.181+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:01.194+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:32:43.598+0000] {processor.py:157} INFO - Started process (PID=7688) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:43.599+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:32:43.600+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:32:43.599+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:43.602+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:32:43.614+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:33:28.495+0000] {processor.py:157} INFO - Started process (PID=7858) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:33:28.496+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:33:28.497+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:33:28.497+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:33:28.500+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:33:28.513+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:34:15.377+0000] {processor.py:157} INFO - Started process (PID=7902) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:34:15.378+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:34:15.379+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:34:15.379+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:34:15.383+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:34:15.397+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:35:00.048+0000] {processor.py:157} INFO - Started process (PID=8008) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:00.050+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:35:00.051+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:35:00.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:00.053+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:00.067+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:35:44.315+0000] {processor.py:157} INFO - Started process (PID=8110) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:44.318+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:35:44.318+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:35:44.318+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:44.321+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:35:44.337+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T18:36:28.525+0000] {processor.py:157} INFO - Started process (PID=8214) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:36:28.526+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:36:28.527+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:36:28.527+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:36:28.529+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:36:28.543+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:37:11.992+0000] {processor.py:157} INFO - Started process (PID=8263) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:11.994+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:37:11.995+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:37:11.995+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:11.998+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:12.012+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:37:54.815+0000] {processor.py:157} INFO - Started process (PID=8430) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:54.817+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:37:54.818+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:37:54.817+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:54.820+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:37:54.833+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:38:59.858+0000] {processor.py:157} INFO - Started process (PID=8553) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:38:59.859+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:38:59.860+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:38:59.860+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:38:59.862+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:38:59.875+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:39:45.046+0000] {processor.py:157} INFO - Started process (PID=8657) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:39:45.047+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:39:45.048+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:39:45.048+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:39:45.050+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:39:45.064+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:40:30.511+0000] {processor.py:157} INFO - Started process (PID=8763) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:40:30.512+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:40:30.513+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:40:30.513+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:40:30.515+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:40:30.529+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:41:14.781+0000] {processor.py:157} INFO - Started process (PID=8867) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:41:14.782+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:41:14.783+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:41:14.783+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:41:14.785+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:41:14.799+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:42:13.524+0000] {processor.py:157} INFO - Started process (PID=8994) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:13.525+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:42:13.526+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:42:13.526+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:13.528+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:13.544+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:42:55.743+0000] {processor.py:157} INFO - Started process (PID=9156) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:55.745+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:42:55.746+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:42:55.746+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:55.748+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:42:55.761+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:43:57.137+0000] {processor.py:157} INFO - Started process (PID=9336) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:43:57.139+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:43:57.140+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:43:57.140+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:43:57.143+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:43:57.155+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:44:42.145+0000] {processor.py:157} INFO - Started process (PID=9441) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:44:42.147+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:44:42.148+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:44:42.147+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:44:42.150+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:44:42.164+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:45:26.785+0000] {processor.py:157} INFO - Started process (PID=9510) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:45:26.787+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:45:26.788+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:45:26.788+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:45:26.790+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:45:26.803+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:46:09.853+0000] {processor.py:157} INFO - Started process (PID=9650) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:09.854+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:46:09.855+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:46:09.855+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:09.857+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:09.871+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:46:53.098+0000] {processor.py:157} INFO - Started process (PID=9756) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:53.099+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:46:53.100+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:46:53.099+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:53.102+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:46:53.119+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T18:47:35.415+0000] {processor.py:157} INFO - Started process (PID=9859) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:47:35.416+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:47:35.417+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:47:35.417+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:47:35.419+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:47:35.435+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T18:48:18.707+0000] {processor.py:157} INFO - Started process (PID=9964) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:48:18.708+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:48:18.709+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:48:18.709+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:48:18.711+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:48:18.726+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T18:49:04.314+0000] {processor.py:157} INFO - Started process (PID=10068) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:04.315+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:49:04.316+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:49:04.316+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:04.318+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:04.331+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:49:49.833+0000] {processor.py:157} INFO - Started process (PID=10174) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:49.835+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:49:49.835+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:49:49.835+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:49.837+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:49:49.850+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:50:31.823+0000] {processor.py:157} INFO - Started process (PID=10277) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:50:31.825+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:50:31.826+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:50:31.826+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:50:31.828+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:50:31.840+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:51:16.128+0000] {processor.py:157} INFO - Started process (PID=10319) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:16.130+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:51:16.131+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:51:16.130+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:16.133+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:16.146+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:51:59.310+0000] {processor.py:157} INFO - Started process (PID=10427) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:59.312+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:51:59.313+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:51:59.313+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:59.315+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:51:59.328+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:52:42.814+0000] {processor.py:157} INFO - Started process (PID=10590) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:52:42.815+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:52:42.816+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:52:42.815+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:52:42.818+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:52:42.835+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T18:53:28.588+0000] {processor.py:157} INFO - Started process (PID=10753) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:53:28.590+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:53:28.591+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:53:28.591+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:53:28.593+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:53:28.608+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T18:54:13.043+0000] {processor.py:157} INFO - Started process (PID=10799) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:13.044+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:54:13.045+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:54:13.045+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:13.047+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:13.061+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:54:57.332+0000] {processor.py:157} INFO - Started process (PID=10901) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:57.333+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:54:57.334+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:54:57.334+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:57.336+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:54:57.350+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:55:43.667+0000] {processor.py:157} INFO - Started process (PID=11005) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:55:43.668+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:55:43.669+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:55:43.669+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:55:43.671+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:55:43.684+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T18:56:30.085+0000] {processor.py:157} INFO - Started process (PID=11111) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:56:30.086+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:56:30.087+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:56:30.087+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:56:30.089+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:56:30.104+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:57:13.267+0000] {processor.py:157} INFO - Started process (PID=11221) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:13.269+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:57:13.271+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:57:13.271+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:13.274+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:13.286+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T18:57:57.511+0000] {processor.py:157} INFO - Started process (PID=11386) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:57.512+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:57:57.513+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:57:57.513+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:57.515+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:57:57.528+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:58:39.746+0000] {processor.py:157} INFO - Started process (PID=11548) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:58:39.748+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:58:39.748+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:58:39.748+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:58:39.751+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:58:39.764+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T18:59:22.858+0000] {processor.py:157} INFO - Started process (PID=11592) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:59:22.860+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T18:59:22.861+0000] {logging_mixin.py:149} INFO - [2023-06-17T18:59:22.861+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:59:22.863+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T18:59:22.876+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:00:05.815+0000] {processor.py:157} INFO - Started process (PID=11696) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:05.817+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:00:05.818+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:00:05.817+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:05.820+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:05.833+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:00:49.667+0000] {processor.py:157} INFO - Started process (PID=11800) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:49.669+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:00:49.670+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:00:49.669+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:49.672+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:00:49.685+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:01:34.185+0000] {processor.py:157} INFO - Started process (PID=11907) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:01:34.186+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:01:34.186+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:01:34.186+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:01:34.191+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:01:34.205+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T19:02:16.434+0000] {processor.py:157} INFO - Started process (PID=11957) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:16.435+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:02:16.436+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:02:16.436+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:16.438+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:16.451+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:02:59.635+0000] {processor.py:157} INFO - Started process (PID=12120) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:59.636+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:02:59.637+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:02:59.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:59.639+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:02:59.652+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:03:43.913+0000] {processor.py:157} INFO - Started process (PID=12223) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:03:43.914+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:03:43.915+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:03:43.915+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:03:43.917+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:03:43.930+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:04:29.032+0000] {processor.py:157} INFO - Started process (PID=12327) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:04:29.033+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:04:29.034+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:04:29.034+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:04:29.036+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:04:29.052+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.025 seconds
+[2023-06-17T19:05:12.344+0000] {processor.py:157} INFO - Started process (PID=12371) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:12.346+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:05:12.346+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:05:12.346+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:12.349+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:12.361+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:05:56.483+0000] {processor.py:157} INFO - Started process (PID=12546) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:56.484+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:05:56.485+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:05:56.485+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:56.487+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:05:56.501+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:06:38.389+0000] {processor.py:157} INFO - Started process (PID=12647) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:06:38.390+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:06:38.391+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:06:38.391+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:06:38.394+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:06:38.408+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T19:07:23.638+0000] {processor.py:157} INFO - Started process (PID=12705) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:07:23.640+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:07:23.641+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:07:23.640+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:07:23.643+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:07:23.657+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T19:08:07.027+0000] {processor.py:157} INFO - Started process (PID=12870) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:07.029+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:08:07.030+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:08:07.030+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:07.032+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:07.045+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:08:48.947+0000] {processor.py:157} INFO - Started process (PID=12971) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:48.949+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:08:48.950+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:08:48.949+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:48.952+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:08:48.965+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T19:09:33.805+0000] {processor.py:157} INFO - Started process (PID=13136) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:09:33.807+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:09:33.808+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:09:33.807+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:09:33.810+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:09:33.823+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:10:19.143+0000] {processor.py:157} INFO - Started process (PID=13181) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:10:19.145+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:10:19.146+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:10:19.146+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:10:19.148+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:10:19.165+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.026 seconds
+[2023-06-17T19:11:01.779+0000] {processor.py:157} INFO - Started process (PID=13282) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:01.780+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:11:01.781+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:11:01.781+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:01.783+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:01.796+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:11:46.467+0000] {processor.py:157} INFO - Started process (PID=13388) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:46.468+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:11:46.469+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:11:46.469+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:46.471+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:11:46.483+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.020 seconds
+[2023-06-17T19:12:30.924+0000] {processor.py:157} INFO - Started process (PID=13498) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:12:30.926+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:12:30.927+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:12:30.926+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:12:30.929+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:12:30.942+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:13:15.415+0000] {processor.py:157} INFO - Started process (PID=13603) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:15.417+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:13:15.418+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:13:15.417+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:15.420+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:15.433+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:13:58.331+0000] {processor.py:157} INFO - Started process (PID=13706) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:58.332+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:13:58.333+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:13:58.333+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:58.335+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:13:58.348+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:14:42.693+0000] {processor.py:157} INFO - Started process (PID=13870) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:14:42.694+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:14:42.695+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:14:42.695+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:14:42.699+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:14:42.713+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.024 seconds
+[2023-06-17T19:15:26.770+0000] {processor.py:157} INFO - Started process (PID=13914) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:15:26.773+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:15:26.774+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:15:26.773+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:15:26.776+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:15:26.788+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T19:16:08.651+0000] {processor.py:157} INFO - Started process (PID=14016) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:08.652+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:16:08.653+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:16:08.653+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:08.655+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:08.667+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.020 seconds
+[2023-06-17T19:16:51.134+0000] {processor.py:157} INFO - Started process (PID=14121) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:51.136+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:16:51.136+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:16:51.136+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:51.139+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:16:51.153+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.023 seconds
+[2023-06-17T19:17:35.461+0000] {processor.py:157} INFO - Started process (PID=14227) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:17:35.463+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:17:35.463+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:17:35.463+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:17:35.466+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:17:35.478+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds
+[2023-06-17T19:18:18.669+0000] {processor.py:157} INFO - Started process (PID=14331) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:18:18.671+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:18:18.671+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:18:18.671+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:18:18.673+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:18:18.687+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:19:02.878+0000] {processor.py:157} INFO - Started process (PID=14433) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:02.879+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:19:02.880+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:19:02.880+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:02.883+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:02.894+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.020 seconds
+[2023-06-17T19:19:47.522+0000] {processor.py:157} INFO - Started process (PID=14597) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:47.523+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:19:47.524+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:19:47.524+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:47.526+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:19:47.540+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.022 seconds
+[2023-06-17T19:20:32.144+0000] {processor.py:157} INFO - Started process (PID=14699) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:20:32.145+0000] {processor.py:826} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py for tasks to queue
+[2023-06-17T19:20:32.146+0000] {logging_mixin.py:149} INFO - [2023-06-17T19:20:32.146+0000] {dagbag.py:541} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:20:32.148+0000] {processor.py:838} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py
+[2023-06-17T19:20:32.161+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/example_setup_teardown.py took 0.021 seconds

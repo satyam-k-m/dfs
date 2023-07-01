@@ -1,0 +1,35 @@
+[2023-06-20T20:36:09.896+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.payments manual__2023-06-20T20:35:53.493417+00:00 [queued]>
+[2023-06-20T20:36:09.904+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.payments manual__2023-06-20T20:35:53.493417+00:00 [queued]>
+[2023-06-20T20:36:09.904+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-06-20T20:36:09.927+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): dbt_task.source.development.sales_stage.payments> on 2023-06-20 20:35:53.493417+00:00
+[2023-06-20T20:36:09.930+0000] {standard_task_runner.py:57} INFO - Started process 21514 to run task
+[2023-06-20T20:36:09.935+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_dbt', 'dbt_task.source.development.sales_stage.payments', 'manual__2023-06-20T20:35:53.493417+00:00', '--job-id', '183', '--raw', '--subdir', 'DAGS_FOLDER/dbt_dag.py', '--cfg-path', '/tmp/tmp_8xvtvuf']
+[2023-06-20T20:36:09.935+0000] {standard_task_runner.py:85} INFO - Job 183: Subtask dbt_task.source.development.sales_stage.payments
+[2023-06-20T20:36:09.988+0000] {task_command.py:410} INFO - Running <TaskInstance: airflow_dbt.dbt_task.source.development.sales_stage.payments manual__2023-06-20T20:35:53.493417+00:00 [running]> on host ubuntu.thbnzb0d3dmuziyfg2t53bofqb.tx.internal.cloudapp.net
+[2023-06-20T20:36:10.210+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='airflow_dbt' AIRFLOW_CTX_TASK_ID='dbt_task.source.development.sales_stage.payments' AIRFLOW_CTX_EXECUTION_DATE='2023-06-20T20:35:53.493417+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-06-20T20:35:53.493417+00:00'
+[2023-06-20T20:36:10.212+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-20T20:36:10.212+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /home/satyam/airflow/dags/dbt/ && dbt run --models bronze_payments']
+[2023-06-20T20:36:10.220+0000] {subprocess.py:86} INFO - Output:
+[2023-06-20T20:36:12.620+0000] {subprocess.py:93} INFO - [0m20:36:12  Running with dbt=1.5.1
+[2023-06-20T20:36:13.015+0000] {subprocess.py:93} INFO - [0m20:36:13  [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2023-06-20T20:36:13.015+0000] {subprocess.py:93} INFO - There are 3 unused configuration paths:
+[2023-06-20T20:36:13.015+0000] {subprocess.py:93} INFO - - models.development.bronze
+[2023-06-20T20:36:13.015+0000] {subprocess.py:93} INFO - - models.development.intermediate
+[2023-06-20T20:36:13.015+0000] {subprocess.py:93} INFO - - models.development.staging
+[2023-06-20T20:36:13.033+0000] {subprocess.py:93} INFO - [0m20:36:13  Found 7 models, 0 tests, 0 snapshots, 0 analyses, 321 macros, 0 operations, 0 seed files, 4 sources, 0 exposures, 0 metrics, 0 groups
+[2023-06-20T20:36:13.036+0000] {subprocess.py:93} INFO - [0m20:36:13
+[2023-06-20T20:36:14.104+0000] {subprocess.py:93} INFO - [0m20:36:14  Concurrency: 1 threads (target='dev')
+[2023-06-20T20:36:14.105+0000] {subprocess.py:93} INFO - [0m20:36:14
+[2023-06-20T20:36:14.111+0000] {subprocess.py:93} INFO - [0m20:36:14  1 of 1 START sql view model final_sales.bronze_payments ........................ [RUN]
+[2023-06-20T20:36:14.666+0000] {subprocess.py:93} INFO - [0m20:36:14  1 of 1 OK created sql view model final_sales.bronze_payments ................... [[32mSUCCESS 1[0m in 0.55s]
+[2023-06-20T20:36:14.670+0000] {subprocess.py:93} INFO - [0m20:36:14
+[2023-06-20T20:36:14.671+0000] {subprocess.py:93} INFO - [0m20:36:14  Finished running 1 view model in 0 hours 0 minutes and 1.63 seconds (1.63s).
+[2023-06-20T20:36:14.681+0000] {subprocess.py:93} INFO - [0m20:36:14
+[2023-06-20T20:36:14.682+0000] {subprocess.py:93} INFO - [0m20:36:14  [32mCompleted successfully[0m
+[2023-06-20T20:36:14.683+0000] {subprocess.py:93} INFO - [0m20:36:14
+[2023-06-20T20:36:14.684+0000] {subprocess.py:93} INFO - [0m20:36:14  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[2023-06-20T20:36:15.861+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-06-20T20:36:15.895+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=airflow_dbt, task_id=dbt_task.source.development.sales_stage.payments, execution_date=20230620T203553, start_date=20230620T203609, end_date=20230620T203615
+[2023-06-20T20:36:15.951+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-06-20T20:36:16.061+0000] {taskinstance.py:2651} INFO - 1 downstream tasks scheduled from follow-on schedule check
