@@ -31,6 +31,10 @@ print(HOME)
 
 # BLOB_NAME = "trigger.txt"
 # AZURE_CONTAINER_NAME = "input"
+table_list = ["ext_dvsn", "ext_chrg_info", "ext_lcl_crrncy", "ext_pos_shop", "ext_pos_trmnl"]
+SQL_REFRESH_STATEMENT = "ALTER EXTERNAL TABLE EXTERNAL_DB.STAGE.%(table_name)s REFRESH"
+SQL_LIST = [ SQL_REFRESH_STATEMENT % {"table_name": table_name}  for table_name in table_list ]
+SQL_MULTIPLE_STMTS = "; ".join(SQL_LIST)
 
 with open(manifest_path) as f: # Open manifest.json
   manifest = json.load(f) # Load its contents into a Python Dictionary
@@ -104,8 +108,16 @@ with DAG(
             )
 
         refresh_stage = SnowflakeOperator(
-            task_id = 'refresh_stage_table',
-            sql = sql_stmts.refresh_stage
+            task_id = 'refresh_stage',
+            sql = sql_stmts.refresh_stage,
+
+            params = {"stage_name": "dfs_external_stage"}
+
+            )
+        
+        refresh_staging_tables = SnowflakeOperator(
+            task_id = 'refresh_staging_tables',
+            sql = SQL_MULTIPLE_STMTS
             )
         
         create_fact_pipeline = SnowflakeOperator(
@@ -135,7 +147,7 @@ with DAG(
         )
 
 
-        refresh_stage >> read_config_table >> [create_fact_pipeline, create_fact_task]  
+        refresh_stage >>  refresh_staging_tables >>read_config_table >> [create_fact_pipeline, create_fact_task]  
         read_config_table >> [insert_pipeline_fact, insert_task_fact]
 
 

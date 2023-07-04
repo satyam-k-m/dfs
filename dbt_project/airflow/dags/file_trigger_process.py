@@ -19,7 +19,7 @@ class CustomWasbSensor(BaseSensorOperator):
         pattern = r".*TRGGR.*"
         ti = context['task_instance']
         provide_context=True,
-        hook = WasbHook('wasb_connection_id') 
+        hook = WasbHook('azure_blob') 
         files = hook.get_blobs_list("output") 
         matched_tggr_file = list(filter(lambda file_path: match(pattern, file_path.replace(prefix, "")), files))
 

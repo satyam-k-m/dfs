@@ -210,7 +210,7 @@ update_pipeline_status_post = """
 # """
 
 refresh_stage = """
-    ALTER STAGE EXTERNAL_DB.STAGE.AZURE_STAGE refresh
+    ALTER STAGE EXTERNAL_DB.STAGE.{{params.stage_name}} refresh;
 """
 
 

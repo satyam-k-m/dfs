@@ -39,5 +39,6 @@ with DAG(
         python_callable=python_pull_function,
         provide_context=True
     )
+    dag_trigger = 
 
     python_push >> python_pull
