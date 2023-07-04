@@ -6,9 +6,7 @@ from airflow.operators.bash import BashOperator
 from airflow.decorators import dag, task, task_group
 from airflow.utils.task_group import TaskGroup
 from airflow.providers.microsoft.azure.sensors.wasb import WasbBlobSensor
-#from test_task_builder import *
 from task_builder_final import *
-# from task_builder import *
 from airflow.decorators import dag
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 from pendulum import datetime
@@ -16,6 +14,7 @@ from airflow.utils.task_group import TaskGroup
 import snowflake_operations as sql_stmts
 from airflow.models import Variable
 from airflow.operators.python_operator import PythonOperator
+from file_trigger_process import *
 
 SNOWFLAKE_DIM_PIPELINE_TABLE = "dim_pipeline"
 SNOWFLAKE_DIM_TASK_TABLE = "dim_task"
@@ -25,24 +24,20 @@ SNOWFLAKE_FCT_TASKS_TABLE = "fct_task"
 SNOWFLAKE_CONN_ID = "snowflake_default"
 
 HOME = os.environ["HOME"] # retrieve the location of your home folder
-dbt_path = os.path.join(HOME,  "dbt_project/dbt/dbt/") # path to your dbt project
-manifest_path = os.path.join(HOME, "dbt_project/dbt/dbt/target/manifest.json") # path to manifest.json
+dbt_path = os.path.join(HOME,  "dfs/dbt_project/dbt/dbt/") # path to your dbt project
+manifest_path = os.path.join(HOME, "dfs/target/manifest.json") # path to manifest.json
 print(HOME)
 
 
-BLOB_NAME = "trigger.txt"
-AZURE_CONTAINER_NAME = "input"
+# BLOB_NAME = "trigger.txt"
+# AZURE_CONTAINER_NAME = "input"
 
 with open(manifest_path) as f: # Open manifest.json
   manifest = json.load(f) # Load its contents into a Python Dictionary
   nodes = manifest["nodes"] # Extract just the nodes
   sources = manifest["sources"]
 
-
-
 # Build an Airflow DAG
-
-
 
 def set_dag_vars():
     Variable.set("start_date_var", pendulum.now())
@@ -83,12 +78,22 @@ with DAG(
                 for upstream_node in upstream_nodes:
                     dbt_tasks[upstream_node] >> dbt_tasks[node_id]
 
-    wait_for_blob = WasbBlobSensor(
+    # [START how_to_wait_for_blob]
+    wait_for_blob = CustomWasbSensor(
         task_id="wait_for_blob",
-        wasb_conn_id="azure_blob",
-        container_name=AZURE_CONTAINER_NAME,
-        blob_name=BLOB_NAME,
     )
+
+    process_blobs_task = PythonOperator(
+        task_id='process_blobs_task',
+        python_callable=process_blobs,
+        provide_context =True,
+    )
+    parse_control_files = PythonOperator(
+        task_id='parse_control_files',
+        python_callable=parse_ctrl_files,
+        provide_context =True
+    )
+
     with TaskGroup("setup_audit_config") as tg:
 
         read_config_table = SnowflakeOperator(
@@ -103,8 +108,6 @@ with DAG(
             sql = sql_stmts.refresh_stage
             )
         
-
-
         create_fact_pipeline = SnowflakeOperator(
             task_id = "create_fct_pipeline",
             sql = sql_stmts.create_fct_pipeline,
@@ -150,13 +153,8 @@ with DAG(
     )
 
 
-    wait_for_blob >> python_op >> tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
-
+    wait_for_blob >> process_blobs_task >> parse_control_files >> python_op >> tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
 
 if __name__ == "__main__":
   dag.cli()
-
-
-        
-
 

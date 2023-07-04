@@ -5,7 +5,7 @@ default:
       database: external_db
       password: Sattu@1998
       role: accountadmin
-      schema: final_sales
+      schema: dfs_models
       threads: 1
       type: snowflake
       user: satyamkumar

@@ -7,7 +7,7 @@ from airflow.decorators import dag, task, task_group
 from airflow.utils.task_group import TaskGroup
 from airflow.providers.microsoft.azure.sensors.wasb import WasbBlobSensor
 from test_task_builder import *
-from task_builder import *
+from dbt_project.airflow.test_dags.task_builder import *
 from airflow.decorators import dag
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 from pendulum import datetime

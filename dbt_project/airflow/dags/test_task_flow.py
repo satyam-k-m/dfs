@@ -23,7 +23,6 @@ with DAG(
 
     test_snowflake_pipeline = CustomeSnowflakeOperator(
         task_id="create_pet_table",
-        # provide_context=True,
         parameters={"pipeline_id": dag.dag_id,
                 "task_id": "{{ task_instance_key_str }}",
                 "run_id": "{{ run_id }}",

@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: sales_stage
+    description: staging source in the snowflake schema
+    database: external_db
+    schema: stage
+    tables:
+      - name: customers
+        description: Source table for customers
+        columns:
+          - name: customer_id
+            description: primary key for the customer dimension
+          - name: first_name
+            description: first name of the customer
+          - name: last_name
+            description: last name for the customer
+      - name: products
+        description: Staging table for products
+        columns:
+          - name: product_id
+            description: primary key for the product
+          - name: price
+            description: price of the product
+
+      - name: orders
+        description: Staging table for orders
+        columns:
+          - name: order_id
+            description: primary for the order table
+
+          - name: customer_id
+            description: foreign key for customer table
+
+          - name: product_id
+            description: foreign key for product table
+
+          - name: order_date
+            description: order date
+
+      - name: payments
+        description: Staging table for payments
+        columns:
+          - name: payment_id
+            description: primary for the payment table
+
+          - name: order_id
+            description: foreign key for order table for which payment is made
+
+          - name: payment_method
+            description: represents way through which payment is done like credit/debit/upi
+
+          - name: status
+            description: status of the payment (fail or success)

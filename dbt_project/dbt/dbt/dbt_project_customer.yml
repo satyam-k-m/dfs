@@ -26,7 +26,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars: 
   run_ts: "2023-06-22"
-  divison: ""
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
