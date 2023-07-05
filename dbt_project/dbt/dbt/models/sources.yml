@@ -16,7 +16,6 @@ sources:
           - name: value
             description: contains variant columns capturing all the columns
 
-
       - name: ext_dvsn
         description: Source table for division info
         columns:
@@ -56,7 +55,7 @@ sources:
             description: division
           - name: VALUE
             description: contains variant columns capturing all the columns
-			
+
       - name: ext_pos_dscnt
         description: Source table for pos dscnt info
         columns:
@@ -67,7 +66,7 @@ sources:
           - name: VALUE
             description: contains variant columns capturing all the columns
 
-	  - name: ext_pos_tndr
+      - name: ext_pos_tndr
         description: Source table for pos tndr info
         columns:
           - name: RUN_DT
@@ -76,7 +75,7 @@ sources:
             description: division
           - name: VALUE
             description: contains variant columns capturing all the columns
-			
+
       - name: ext_pos_tx
         description: Source table for pos tx info
         columns:
@@ -96,7 +95,7 @@ sources:
             description: division
           - name: VALUE
             description: contains variant columns capturing all the columns
-			
+
       - name: ext_pos_tx_ln
         description: Source table for pos tx line info
         columns:

@@ -15,7 +15,7 @@ with POS_TRMNL as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',pos_location_id,divison_number,terminal_number)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_POS_TRMNL') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_trmnl') }}
 )
 
 select * from POS_TRMNL

@@ -14,7 +14,7 @@ with POS_SHOP as (
         division,
         run_dt,
         SSHA2_HEX(concat_ws('~',pos_location_id,divison_number)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_POS_SHOP') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_shop') }}
 )
 
 select * from POS_SHOP

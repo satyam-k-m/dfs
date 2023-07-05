@@ -27,7 +27,7 @@ with POS_TNDR as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',pay_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_POS_TNDR') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_tndr') }}
 )
 
 select * from POS_TNDR

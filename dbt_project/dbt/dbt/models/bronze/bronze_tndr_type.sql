@@ -18,7 +18,7 @@ with TNDR_TYPE as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',ten_type,div_nbr)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_TNDR_TYPE') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_tndr_type') }}
 )
 
 select * from TNDR_TYPE

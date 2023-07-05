@@ -26,7 +26,7 @@ with RFND_ORGNL_TX_RFRNC as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',ORIG_TX_NBR,ORIG_TERM_NBR)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_RFND_ORGNL_TX_RFRNC') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_rfnd_orgnl_tx_rfrnc') }}
 )
 
 select * from RFND_ORGNL_TX_RFRNC

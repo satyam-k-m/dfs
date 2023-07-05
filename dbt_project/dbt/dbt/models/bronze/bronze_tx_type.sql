@@ -16,7 +16,7 @@ with TX_TYPE as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',div_nbr,app_cd,tx_type)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_TX_TYPE') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_tx_type') }}
 )
 
 select * from TX_TYPE

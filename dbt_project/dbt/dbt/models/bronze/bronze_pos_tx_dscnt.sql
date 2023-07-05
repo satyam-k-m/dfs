@@ -33,7 +33,7 @@ with POS_TX_DSCNT as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',dscnt_line_nbr,sale_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','EXT_POS_TX_DSCNT') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_tx_dscnt') }}
 )
 
 select * from POS_TX_DSCNT
