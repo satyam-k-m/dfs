@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table external_db.dfs_models.bronze_local_currency
+        create or replace transient table insight_dev.INS_BKP.bronze_local_currency
          as
         (
 
@@ -18,7 +18,7 @@ WITH LOCAL_CURRENCY AS (
         RUN_DT,
         SHA2_HEX(CONCAT_WS('~',CURR_CD,DIV_NBR)) AS SURR_KEY,
         TO_TIMESTAMP('2023-06-22') AS RUN_TS
-    FROM external_db.stage.ext_lcl_crrncy
+    FROM insight_dev.ins_bkp.ext_lcl_crrncy
 )
 SELECT *
 FROM LOCAL_CURRENCY

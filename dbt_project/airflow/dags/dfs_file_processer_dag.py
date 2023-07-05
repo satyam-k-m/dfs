@@ -13,10 +13,10 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.operators.trigger_dagrun  import TriggerDagRunOperator
 
 # tggr_file = 'in_demo_trgg_in_mac'
-CONTAINER_NAME = "output"
-CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=acstorage901;AccountKey=k+DzqtOi5TQd2Mq/vyi3W43L1LXV0zcAw8OwMVRS/cMOnW/dGFrLt1aDD/9CNTg0/zv1Un4rIDwI+AStY5LJjQ==;EndpointSuffix=core.windows.net"
+CONTAINER_NAME = "abcd"
+CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=dfsaassdpnprdadls01;AccountKey=t6mFmpdIM/FvC8BwIV87TySyAhXOLSGS1qxTadvafil9L2sX5N9dIUi+S6I6bqXu8+gV6kkazgZO+AStCQaVxg==;EndpointSuffix=core.windows.net"
 BLOB_SERVICE_CLIENT = BlobServiceClient.from_connection_string(CONNECTION_STRING)
-CONTAINER_CLIENT = BLOB_SERVICE_CLIENT.get_container_client(CONTAINER_NAME)
+CONTAINER_CLIENT = BLOB_SERVICE_CLIENT.get_container_client("abcd")
 CURRENT_DATE = pendulum.now("UTC").format("YYYYMMDD")
 
 def set_dag_vars():
@@ -29,7 +29,7 @@ class CustomWasbSensor(BaseSensorOperator):
         ti = context['task_instance']
         provide_context=True,
         hook = WasbHook('azure_blob') 
-        files = hook.get_blobs_list("output") 
+        files = hook.get_blobs_list("abcd") 
         matched_tggr_file = list(filter(lambda file_path: match(pattern, file_path.replace(prefix, "")), files))
 
         ti.xcom_push(key='matched_tggr_file', value=matched_tggr_file)
@@ -74,14 +74,14 @@ def validate_data_files(data_files_list,tggr_file_list,control_file_list):
             file_data = blob_client.download_blob().readall().decode('utf-8')
             
             # Count the number of records in the data file
-            actual_count = int(len(file_data.split('\n'))) - 1
+            actual_count = int(len(file_data.split('\n'))) - 2 
             print(type(actual_count))
             # Compare the actual count with the expected count
             if int(actual_count) == int(expected_count):
-                print(f"Data file '{file_name}' is present. Expected record count:{expected_count} Actual Count: {actual_count}")
+                print(f"Data file '{file_name}' is present. Expected record count:{expected_count} matching with Actual Count: {actual_count}")
             else:
                 all_matched_records = False
-                print(f"Data file '{file_name}' is present. Expected record count of {expected_count} Actual Count: {actual_count}")
+                print(f"Data file '{file_name}' is present. Expected record count of {expected_count} not matching Actual Count: {actual_count}")
         else:
             all_files_present = False
             print(f"Data file '{file_name}' does not exist in the container.")
@@ -93,7 +93,7 @@ def validate_data_files(data_files_list,tggr_file_list,control_file_list):
         source_blob_client = CONTAINER_CLIENT.get_blob_client(file_name)
         if source_blob_client.exists():
             file = f"{file_name}_{CURRENT_DATE}"
-            destination_folder = 'success' if (all_files_present or all_matched_records) else 'failed'
+            destination_folder = 'external' if (all_files_present and  all_matched_records) else 'failed'
             destination_blob_client = CONTAINER_CLIENT.get_blob_client(destination_folder + "/" + file)
             destination_blob_client.start_copy_from_url(source_blob_client.url)
             source_blob_client.delete_blob()

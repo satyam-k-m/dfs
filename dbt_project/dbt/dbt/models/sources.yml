@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: dfs_stage
     description: staging source in the snowflake schema
-    database: external_db
-    schema: stage
+    database: insight_dev
+    schema: ins_bkp
     tables:
       - name: ext_chrg_info
         description: Source table for Charging info

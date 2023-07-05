@@ -43,7 +43,7 @@ with division as (
         division,
         run_dt,
         SHA2_HEX(DIV_NBR) as surr_key,
-        to_timestamp('2023-06-22') as run_ts  from external_db.stage.ext_dvsn
+        to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_dvsn
 )
 
 select * from division
