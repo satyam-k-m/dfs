@@ -21,8 +21,8 @@ SNOWFLAKE_FCT_TASKS_TABLE = "fct_task"
 SNOWFLAKE_CONN_ID = "snowflake_default"
 
 HOME = os.environ["HOME"] # retrieve the location of your home folder
-dbt_path = os.path.join(HOME,  "airflow/dags/dbt/") # path to your dbt project
-manifest_path = os.path.join(HOME, "airflow/target/manifest.json") # path to manifest.json
+dbt_path = os.path.join(HOME,  "dfs/dbt_project/dbt/dbt/dbt/") # path to your dbt project
+manifest_path = os.path.join(HOME, "dfs/dbt_project/dbt/dbt/target/manifest.json") # path to manifest.json
 print(HOME)
 
 
