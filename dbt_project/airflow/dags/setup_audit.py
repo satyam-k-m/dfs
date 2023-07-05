@@ -73,6 +73,38 @@ with DAG(
                     dbt_tasks[upstream_node] >> dbt_tasks[node_id]
 
 
+    with TaskGroup("setup_pipeline_table") as tg_pipeline:
+
+        create_dim_pipeline_table = SnowflakeOperator(
+            task_id="create_dim_pipeline_table",
+            sql=sql_stmts.create_dim_pipeline,
+            params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE},
+        )
+
+        create_dim_task_table = SnowflakeOperator(
+            task_id="create_dim_task_table",
+            sql=sql_stmts.create_dim_task,
+            params={"table_name": SNOWFLAKE_DIM_TASK_TABLE},
+        )
+
+        insert_into_dim_pipeline_table = SnowflakeOperator(
+        task_id="insert_dim_pipeline_table",
+        sql=sql_stmts.insert_dim_pipeline,
+        params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE, "pipeline_id": dag.dag_id, "pipeline_name":"dbt_airflow"},
+        )
+
+        create_dim_pipeline_table >> create_dim_task_table >> insert_into_dim_pipeline_table
+
+
+    read_config_table = SnowflakeOperator(
+        task_id = 'read_pipeline_table',
+       sql = sql_stmts.read_dim_table,
+       params = {"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE}
+
+    )
+
+    tg_pipeline >> read_config_table >>  dbt_tg
+
 if __name__ == "__main__":
   dag.cli()
 
