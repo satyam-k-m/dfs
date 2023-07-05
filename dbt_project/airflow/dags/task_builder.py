@@ -30,7 +30,7 @@ class TaskBuilder():
 
 
             insert_dim_task =  SnowflakeOperator(
-                    task_id = "insert_dim_task",
+                    task_id = "insert_dim_task_source",
                     sql = sql_stmts.insert_dim_task,
                     params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":tg}
                 )
@@ -58,9 +58,9 @@ class TaskBuilder():
         with TaskGroup(group_id=group_id) as tg:
             
             insert_dim_task =  SnowflakeOperator(
-                    task_id = "insert_dim_task",
+                    task_id = "insert_dim_task_model",
                     sql = sql_stmts.insert_dim_task,
-                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":tg}
+                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":group_id}
             )
             
             node_id = BashOperator(
