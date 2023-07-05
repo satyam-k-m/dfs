@@ -14,7 +14,6 @@ from airflow.utils.task_group import TaskGroup
 import snowflake_operations as sql_stmts
 from airflow.models import Variable
 from airflow.operators.python_operator import PythonOperator
-from file_trigger_process import *
 
 SNOWFLAKE_DIM_PIPELINE_TABLE = "dim_pipeline"
 SNOWFLAKE_DIM_TASK_TABLE = "dim_task"

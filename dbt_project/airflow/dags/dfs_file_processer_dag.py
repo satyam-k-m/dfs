@@ -136,14 +136,6 @@ with DAG(
   catchup=False,
 ) as dag:
     
-    # python_op = PythonOperator(
-    #     task_id="set_dag_vars",
-    #     python_callable=set_dag_vars
-    # )
-
-    # start_date_var = Variable.get("start_date_var")
-
-    # [START how_to_wait_for_blob]
     wait_for_blob = CustomWasbSensor(
         task_id="waiting_for_trigger_file",
     )
