@@ -29,7 +29,7 @@ class TaskBuilder():
             #     bash_command= "echo Hello")
 
 
-            insert_dim_task =  SnowflakeOperator(
+            insert_dim_task_source =  SnowflakeOperator(
                     task_id = "insert_dim_task_source",
                     sql = sql_stmts.insert_dim_task,
                     params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":tg}
@@ -48,7 +48,7 @@ class TaskBuilder():
                 + f" && dbt run --models {node_info['name']}", # run the model!
                 )
 
-            insert_dim_task >> source_id 
+            insert_dim_task_source >> source_id 
             
         return tg
     
@@ -57,7 +57,7 @@ class TaskBuilder():
         group_id = node_id.replace(".", "_")
         with TaskGroup(group_id=group_id) as tg:
             
-            insert_dim_task =  SnowflakeOperator(
+            insert_dim_task_model =  SnowflakeOperator(
                     task_id = "insert_dim_task_model",
                     sql = sql_stmts.insert_dim_task,
                     params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":group_id}
@@ -76,7 +76,7 @@ class TaskBuilder():
                 + f" && dbt run --models {node_info['name']}", # run the model!
             )
 
-            insert_dim_task >> node_id
+            insert_dim_task_model >> node_id
             
         return tg
          
