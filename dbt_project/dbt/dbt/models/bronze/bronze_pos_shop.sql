@@ -1,21 +1,20 @@
 
 {{
     config(
-        MATERIALIZED='INCREMENTAL',
-        UNIQUE_KEY='SURR_KEY'
+        materialized='incremental',
+        unique_key='surr_key'
 
     )
 }}
 
-WITH POS_SHOP AS (
-    SELECT 
-        VALUE:c1::NUMBER(38, 0) AS POS_LOCATION_ID,
-        VALUE:c2::NUMBER(38, 0) AS DIVISON_NUMBER,
-        DIVISION,
-        RUN_DT,
-        SHA2_HEX(CONCAT_WS('~',POS_LOCATION_ID,DIVISON_NUMBER)) AS SURR_KEY,
-        TO_TIMESTAMP('{{ var("run_ts") }}') AS RUN_TS
-    FROM {{ source('dfs_stage', 'ext_pos_shop') }}
+with POS_SHOP as (
+     select
+		POS_LOCATION_ID NUMBER(38,0) AS (value:c1:: NUMBER(38,0)),
+		DIVISON_NUMBER NUMBER(38,0) AS (value:c2:: NUMBER(38,0)),
+        division,
+        run_dt,
+        SSHA2_HEX(concat_ws('~',pos_location_id,divison_number)) as surr_key,
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_POS_SHOP') }}
 )
-SELECT *
-FROM POS_SHOP
+
+select * from POS_SHOP
