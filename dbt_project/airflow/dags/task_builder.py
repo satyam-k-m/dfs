@@ -22,7 +22,9 @@ class TaskBuilder():
         source_id = node_info["depends_on"]["nodes"][0]
         item = self.sources[source_id]
         group_id = source_id.replace(".", "_")
-        with TaskGroup(group_id=group_id) as tg:
+        group_id_name = f"{group_id}_source"
+
+        with TaskGroup(group_id=group_id_name) as tg:
 
             # insert_task_dim = BaseException(
             #     task_id="dummy_bash_operator_pre",
@@ -32,7 +34,7 @@ class TaskBuilder():
             insert_dim_task_source =  SnowflakeOperator(
                     task_id = "insert_dim_task_source",
                     sql = sql_stmts.insert_dim_task,
-                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":tg}
+                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":group_id}
                 )
             
             source_id = BashOperator(
