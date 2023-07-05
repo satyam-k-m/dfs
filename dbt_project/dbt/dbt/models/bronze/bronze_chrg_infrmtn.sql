@@ -16,7 +16,7 @@ with CHRG_INFRMTN as (
         value:c5:: NUMBER(38,0) AS POS_LOC_ID,
         value:c6:: NUMBER(38,0) AS BIZ_DT,
         value:c7:: VARCHAR(1) AS ADJ_FLG,
-        value:c8:: NUMBER(19,0) AS ACC_NBR),
+        value:c8:: NUMBER(19,0) AS ACC_NBR,
         value:c9:: VARCHAR(10) AS ACC_TYPE,
         value:c10:: NUMBER(4,0) AS EXP_DT,
         value:c11:: VARCHAR(10) AS APP_CD,
