@@ -11,7 +11,7 @@ with CHRG_INFRMTN as (
      select
 		value:c1:: NUMBER(38,0) AS PAY_LINE_NBR,
         value:c2:: NUMBER(38,0) AS TX_NBR,
-        Value:c3:: NUMBER(38,0)TERM_NBR,
+        Value:c3:: NUMBER(38,0) AS TERM_NBR,
         value:c4:: NUMBER(38,0) AS DIV_NBR,
         value:c5:: NUMBER(38,0) AS POS_LOC_ID,
         value:c6:: NUMBER(38,0) AS BIZ_DT,

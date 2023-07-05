@@ -9,7 +9,7 @@
 
 with TNDR_TYPE as (
      select
-		value:c1::NUMBER(38,0) AS TEN_TYPE),
+		value:c1::NUMBER(38,0) AS TEN_TYPE,
         value:c2::NUMBER(38,0) AS DIV_NBR,
         value:c3::varchar(4) AS SHORT_DESC,
         value:c4::varchar(30) AS LONG_DESC,
