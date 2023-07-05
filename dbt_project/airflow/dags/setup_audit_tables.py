@@ -7,7 +7,7 @@ from airflow.decorators import dag, task, task_group
 from airflow.utils.task_group import TaskGroup
 from airflow.providers.microsoft.azure.sensors.wasb import WasbBlobSensor
 from test_task_builder import *
-from dbt_project.airflow.test_dags.task_builder import *
+from dbt_project.airflow.dags.task_builder import *
 from airflow.decorators import dag
 from airflow.providers.snowflake.operators.snowflake import SnowflakeOperator
 from pendulum import datetime
@@ -53,7 +53,7 @@ with DAG(
             if len(node_info['sources']):
                 source_id = node_info["depends_on"]["nodes"][0]
 
-                dbt_tasks[source_id] = task_builder.build_source_task_group(node_info)
+                dbt_tasks[source_id] = task_builder.build_source_task_group( node_info)
             dbt_tasks[node_id] = task_builder.build_node_task_group(node_id, node_info)
 
             # Define relationships between Operators

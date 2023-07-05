@@ -1,7 +1,7 @@
 """"Contains DDL queres for Audit tables"""
 
 create_dim_pipeline = """
-    CREATE TRANSIENT TABLE IF NOT EXISTS dfs_audit.audit_control.{{ params.table_name }}
+    CREATE TRANSIENT TABLE IF NOT EXISTS INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (
             pipeline_id VARCHAR(25),
             pipeline_name VARCHAR(25),
@@ -10,7 +10,7 @@ create_dim_pipeline = """
 """
 
 create_dim_task = """
-    CREATE TRANSIENT TABLE IF NOT EXISTS dfs_audit.audit_control.{{ params.table_name }}
+    CREATE TRANSIENT TABLE IF NOT EXISTS INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (
             task_id VARCHAR(100),
             pipeline_id VARCHAR(25),
@@ -24,7 +24,7 @@ create_dim_task = """
 """
 
 create_fct_pipeline = """
-    CREATE TRANSIENT TABLE IF NOT EXISTS dfs_audit.audit_control.{{ params.table_name }}
+    CREATE TRANSIENT TABLE IF NOT EXISTS INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (
             pipeline_id VARCHAR(25),
             run_id VARCHAR(100),
@@ -44,7 +44,7 @@ create_fct_pipeline = """
 """
 
 create_fct_task = """
-    CREATE TRANSIENT TABLE IF NOT EXISTS  dfs_audit.audit_control.{{ params.table_name }}
+    CREATE TRANSIENT TABLE IF NOT EXISTS  INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (
             pipeline_id VARCHAR(25),
             run_id VARCHAR(100),
@@ -62,34 +62,34 @@ create_fct_task = """
 
 insert_dim_task = """
 
-    INSERT INTO  dfs_audit.audit_control.{{ params.table_name }}
+    INSERT INTO  INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (pipeline_id,
             task_id,
             task_name,
             landing_directory,
             file_naming_pattern,
             active_status_ind )
-        VALUES ( '{{params.pipeline_id}}', '{{params.task_id}}', '{{params.task_name}}', 'input/', '*csv', 'Y'
+        VALUES ('{{params.pipeline_id}}', INSIGHT_DEV.INS_BKP.TASK_ID_SEQ.nextval , '{{params.task_name}}', 'input/', '*csv', 'Y'
         );
 """
 
 insert_dim_pipeline = """
 
-    INSERT INTO  dfs_audit.audit_control.{{ params.table_name }}
+    INSERT INTO  INSIGHT_DEV.INS_BKP.{{ params.table_name }}
         (pipeline_id,
             pipeline_name,
             active_status_ind)
-        VALUES ( '{{params.pipeline_id}}',  '{{params.pipeline_name}}', 'Y'
+        VALUES ( INSIGHT_DEV.INS_BKP.PIPELINE_ID_SEQ.nextval,  '{{params.pipeline_name}}', 'Y'
         );
 """
 
 
 read_dim_table = """
-        SELECT * FROM dfs_audit.audit_control.{{params.table_name}}
+        SELECT * FROM INSIGHT_DEV.INS_BKP.{{params.table_name}}
 """
 
 insert_pipeline_status = """
-        INSERT INTO dfs_audit.audit_control.{{params.table_name}}
+        INSERT INTO INSIGHT_DEV.INS_BKP.{{params.table_name}}
         (
          pipeline_id,
             run_id,
@@ -113,42 +113,42 @@ insert_pipeline_status = """
 """
 
 insert_task_status = """
-    INSERT INTO dfs_audit.audit_control.{{params.fact_table_name}}
+    INSERT INTO INSIGHT_DEV.INS_BKP.{{params.fact_table_name}}
         (pipeline_id, task_id, run_id, run_ts,  start_ts, end_ts, duration, status_cd, error_message, error_cd)
         select pipeline_id, task_id,null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, 
         null as error_message,null as error_cd
-        from dfs_audit.audit_control.{{params.dim_table_name}}
+        from INSIGHT_DEV.INS_BKP.{{params.dim_table_name}}
         where pipeline_id='{{params.pipeline_id}}'
         
 """
 
 
 insert_pipeline_status = """
-    INSERT INTO dfs_audit.audit_control.{{params.fact_table_name}}
+    INSERT INTO INSIGHT_DEV.INS_BKP.{{params.fact_table_name}}
         select pipeline_id,null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, null as error_message,null as error_cd,
         null as created_ts, null as created_by, null as modified_ts, null as modified_by
-        from dfs_audit.audit_control.{{params.dim_table_name}}
+        from INSIGHT_DEV.INS_BKP.{{params.dim_table_name}}
         where pipeline_id='{{params.pipeline_id}}'
         
 """
 
 update_task_status_pre = """
-        UPDATE dfs_audit.audit_control.{{params.task_table_name}} tsk
-        FROM dfs_audit.audit_control.{{params.pipeline_table_name}} pipeline
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.task_table_name}} tsk
+        FROM INSIGHT_DEV.INS_BKP.{{params.pipeline_table_name}} pipeline
         SET 
             tsk.run_id = pipeline.run_id,
             tsk.status_cd = '{{params.status_cd}}',
             tsk.start_ts = CURRENT_TIMESTAMP
 
         WHERE 
-            tsk.pipeline_id =  '{{params.pipeline_id}}' AND 
+            tsk.pipeline_id =  '{{params.pipeline_id}}' AND
             tsk.task_id = '{{params.task_id}}' AND
             tsk.run_ts = '{{params.run_ts}}'
 
 """
 
 update_task_status_post = """
-        UPDATE dfs_audit.audit_control.{{params.task_table_name}}
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.task_table_name}}
         SET 
             status_cd = '{{params.status_cd}}',
             end_ts = CURRENT_TIMESTAMP
@@ -158,7 +158,7 @@ update_task_status_post = """
             task_id = '{{params.task_id}}' AND
             run_ts = '{{params.run_ts}}';
         
-        UPDATE dfs_audit.audit_control.{{params.task_table_name}}
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.task_table_name}}
         SET 
             duration = TIMESTAMPDIFF(SECONDS, start_ts, end_ts)
 
@@ -170,9 +170,9 @@ update_task_status_post = """
 """
 
 update_pipeline_status_pre = """
-        UPDATE dfs_audit.audit_control.{{params.table_name}}
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.table_name}}
         SET 
-            run_id = DFS_AUDIT.AUDIT_CONTROL.run_id_seq.nextval,
+            run_id = INSIGHT_DEV.INS_BKP.run_id_seq.nextval,
             status_cd = '{{params.status_cd}}',
             start_ts = CURRENT_TIMESTAMP
         WHERE 
@@ -182,14 +182,14 @@ update_pipeline_status_pre = """
 """
 
 update_pipeline_status_post = """
-        UPDATE dfs_audit.audit_control.{{params.table_name}}
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.table_name}}
         SET status_cd = '{{params.status_cd}}',
             end_ts = CURRENT_TIMESTAMP
         WHERE 
             pipeline_id =  '{{params.pipeline_id}}' AND
             run_ts = '{{params.run_ts}}';
 
-        UPDATE dfs_audit.audit_control.{{params.table_name}}
+        UPDATE INSIGHT_DEV.INS_BKP.{{params.table_name}}
         SET 
             duration = TIMESTAMPDIFF(SECONDS, start_ts, end_ts)
         WHERE 
@@ -198,7 +198,7 @@ update_pipeline_status_post = """
 
 """
 # update_task_status = """
-#         UPDATE dfs_audit.audit_control.{{params.table_name}}
+#         UPDATE INSIGHT_DEV.INS_BKP.{{params.table_name}}
 #         SET status_cd = '{{params.status_cd}}',
 #             end_ts = {{params.end_ts}},
 
@@ -210,15 +210,16 @@ update_pipeline_status_post = """
 # """
 
 refresh_stage = """
-    ALTER STAGE EXTERNAL_DB.STAGE.{{params.stage_name}} refresh;
+    ALTER STAGE INSIGHT_DEV.INS_BKP.{{params.stage_name}} refresh;
 """
 
 
 test_snowflake_query = """
-    INSERT INTO dfs_audit.audit_control.test
+    INSERT INTO INSIGHT_DEV.INS_BKP.test
         values(
         %(pipeline_id)s,
         %(task_id)s,
         %(run_id)s
        )
 """
+

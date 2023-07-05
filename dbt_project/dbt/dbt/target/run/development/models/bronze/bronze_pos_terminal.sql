@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table external_db.dfs_models.bronze_pos_terminal
+        create or replace transient table insight_dev.INS_BKP.bronze_pos_terminal
          as
         (
 
@@ -15,7 +15,7 @@ WITH POS_TERMINAL AS (
         RUN_DT,
         SHA2_HEX(concat_ws('~',POS_LOCATION_ID,DIVISON_NUMBER,TERMINAL_NUMBER)) AS SURR_KEY,
         TO_TIMESTAMP('2023-06-22') AS RUN_TS
-    FROM external_db.stage.ext_pos_trmnl
+    FROM insight_dev.ins_bkp.ext_pos_trmnl
 )
 SELECT *
 FROM POS_TERMINAL

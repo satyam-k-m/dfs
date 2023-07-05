@@ -10,8 +10,8 @@
 
     
 
-    merge into external_db.dfs_models.bronze_divison as DBT_INTERNAL_DEST
-        using external_db.dfs_models.bronze_divison__dbt_tmp as DBT_INTERNAL_SOURCE
+    merge into insight_dev.INS_BKP.bronze_divison as DBT_INTERNAL_DEST
+        using insight_dev.INS_BKP.bronze_divison__dbt_tmp as DBT_INTERNAL_SOURCE
         on (
                 DBT_INTERNAL_SOURCE.surr_key = DBT_INTERNAL_DEST.surr_key
             )

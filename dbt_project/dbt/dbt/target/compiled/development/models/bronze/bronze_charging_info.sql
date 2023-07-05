@@ -16,7 +16,7 @@ with charging_info as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',PAY_LINE_NBR,TX_NBR,TERM_NBR,DIV_NBR,POS_LOC_ID)) as surr_key,
-        to_timestamp('2023-06-22') as run_ts  from external_db.stage.ext_chrg_info
+        to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_chrg_info
 )
 
 select * from charging_info
