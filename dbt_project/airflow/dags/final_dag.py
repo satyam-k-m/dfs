@@ -82,22 +82,6 @@ with DAG(
                 for upstream_node in upstream_nodes:
                     dbt_tasks[upstream_node] >> dbt_tasks[node_id]
 
-    # [START how_to_wait_for_blob]
-    wait_for_blob = CustomWasbSensor(
-        task_id="wait_for_blob",
-    )
-
-    process_blobs_task = PythonOperator(
-        task_id='process_blobs_task',
-        python_callable=process_blobs,
-        provide_context =True,
-    )
-    parse_control_files = PythonOperator(
-        task_id='parse_control_files',
-        python_callable=parse_ctrl_files,
-        provide_context =True
-    )
-
     with TaskGroup("setup_audit_config") as tg:
 
         read_config_table = SnowflakeOperator(
@@ -165,7 +149,7 @@ with DAG(
     )
 
 
-    wait_for_blob >> process_blobs_task >> parse_control_files >> python_op >> tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
+    python_op >> tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
 
 if __name__ == "__main__":
   dag.cli()

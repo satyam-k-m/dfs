@@ -6,6 +6,7 @@ from airflow import DAG, XComArg
 from airflow.decorators import task
 from airflow.operators.bash import BashOperator
 from airflow.operators.python_operator import PythonOperator
+from airflow.operators.trigger_dagrun  import TriggerDagRunOperator
 
 value_1 = [1, 2, 3]
 value_2 = {"a": "b"}
@@ -39,6 +40,17 @@ with DAG(
         python_callable=python_pull_function,
         provide_context=True
     )
-    dag_trigger = 
 
-    python_push >> python_pull
+    dag2_trigger = TriggerDagRunOperator(
+        task_id = "trigger_second_dag",
+        trigger_dag_id= "test_dag2"
+        
+    )
+
+    dag_trigger = TriggerDagRunOperator(
+        task_id = "trigger_same_dag",
+        trigger_dag_id= "test_x_com"
+        
+    )
+
+    python_push >> python_pull >> dag2_trigger >>dag_trigger
