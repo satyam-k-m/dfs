@@ -34,6 +34,10 @@ with POS_TX_DSCNT as (
         run_dt,
         SHA2_HEX(concat_ws('~',dscnt_line_nbr,sale_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
         to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_tx_dct') }}
+
+		{% if is_incremental() %}
+            where run_dt = to_date('{{ var("run_ts") }}')
+        {% endif %}
 )
 
 select * from POS_TX_DSCNT

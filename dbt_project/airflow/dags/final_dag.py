@@ -24,13 +24,13 @@ SNOWFLAKE_CONN_ID = "snowflake_default"
 
 HOME = os.environ["HOME"] # retrieve the location of your home folder
 dbt_path = os.path.join(HOME,  "dfs/dbt_project/dbt/dbt/") # path to your dbt project
-manifest_path = os.path.join(HOME, "dfs/target/manifest.json") # path to manifest.json
+manifest_path = os.path.join(HOME, "dfs/dbt_project/dbt/dbt/target/manifest.json") # path to manifest.json
 print(HOME)
 
 
 # BLOB_NAME = "trigger.txt"
 # AZURE_CONTAINER_NAME = "input"
-table_list = ["ext_dvsn", "ext_chrg_info", "ext_lcl_crrncy", "ext_pos_shop", "ext_pos_trmnl"]
+table_list = [ "ext_chrg_info","ext_dvsn", "ext_lcl_crrncy", "ext_pos_shop", "ext_pos_trmnl", "ext_pos_dscnt", "ext_pos_tndr", "ext_pos_tx", "ext_pos_tx_dct", "ext_pos_tx_ln", "ext_rfnd_tx_rf", "ext_tndr_type", "ext_tx_type"]
 SQL_REFRESH_STATEMENT = "ALTER EXTERNAL TABLE INSIGHT_DEV.INS_BKP.%(table_name)s REFRESH"
 SQL_LIST = [ SQL_REFRESH_STATEMENT % {"table_name": table_name}  for table_name in table_list ]
 SQL_MULTIPLE_STMTS = "; ".join(SQL_LIST)

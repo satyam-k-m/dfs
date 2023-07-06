@@ -90,7 +90,7 @@ with DAG(
         insert_into_dim_pipeline_table = SnowflakeOperator(
         task_id="insert_dim_pipeline_table",
         sql=sql_stmts.insert_dim_pipeline,
-        params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE, "pipeline_id": dag.dag_id, "pipeline_name":"dbt_airflow"},
+        params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE, "pipeline_id": "dfs_pipeline", "pipeline_name":"dfs_pipeline"},
         )
 
         create_dim_pipeline_table >> create_dim_task_table >> insert_into_dim_pipeline_table

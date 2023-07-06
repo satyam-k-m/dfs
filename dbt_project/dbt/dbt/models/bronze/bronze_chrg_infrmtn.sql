@@ -7,6 +7,7 @@
     )
 }}
 
+
 with CHRG_INFRMTN as (
      select
 		value:c1:: NUMBER(38,0) AS PAY_LINE_NBR,
@@ -24,6 +25,10 @@ with CHRG_INFRMTN as (
         run_dt,
         SHA2_HEX(concat_ws('~',pay_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
         to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_chrg_info') }}
+
+        {% if is_incremental() %}
+            where run_dt = to_date('{{ var("run_ts") }}')
+        {% endif %}
 )
 
 select * from CHRG_INFRMTN

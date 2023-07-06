@@ -19,6 +19,8 @@ WITH LOCAL_CURRENCY AS (
         SHA2_HEX(CONCAT_WS('~',CURR_CD,DIV_NBR)) AS SURR_KEY,
         TO_TIMESTAMP('2023-06-22') AS RUN_TS
     FROM insight_dev.ins_bkp.ext_lcl_crrncy
+
+    
 )
 SELECT *
 FROM LOCAL_CURRENCY

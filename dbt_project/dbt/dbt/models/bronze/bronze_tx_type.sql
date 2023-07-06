@@ -17,6 +17,10 @@ with TX_TYPE as (
         run_dt,
         SHA2_HEX(concat_ws('~',div_nbr,app_cd,tx_type)) as surr_key,
         to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_tx_type') }}
+
+        {% if is_incremental() %}
+            where run_dt = to_date('{{ var("run_ts") }}')
+        {% endif %}
 )
 
 select * from TX_TYPE

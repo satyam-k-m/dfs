@@ -44,6 +44,10 @@ with division as (
         run_dt,
         SHA2_HEX(DIV_NBR) as surr_key,
         to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_dvsn
+
+        
+            where run_dt = to_date('2023-06-22')
+        
 )
 
 select * from division

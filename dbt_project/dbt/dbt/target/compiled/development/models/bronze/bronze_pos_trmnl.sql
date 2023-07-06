@@ -9,6 +9,10 @@ with POS_TRMNL as (
         run_dt,
         SHA2_HEX(concat_ws('~',pos_location_id,divison_number,terminal_number)) as surr_key,
         to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_pos_trmnl
+
+        
+            where run_dt = to_date('2023-06-22')
+        
 )
 
 select * from POS_TRMNL

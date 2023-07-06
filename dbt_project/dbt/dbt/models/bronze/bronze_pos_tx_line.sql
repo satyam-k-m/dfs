@@ -67,6 +67,10 @@ with POS_TX_LINE as (
         run_dt,
         SHA2_HEX(concat_ws('~',sale_line_nbr,tx_nbr,term_nbr,divison_number,pos_loc_id,div_nbr)) as surr_key,
         to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_pos_tx_ln') }}
+
+        {% if is_incremental() %}
+            where run_dt = to_date('{{ var("run_ts") }}')
+        {% endif %}
 )
 
 select * from POS_TX_LINE

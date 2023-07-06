@@ -29,7 +29,7 @@ class TaskBuilder():
             insert_dim_task_source =  SnowflakeOperator(
                     task_id = "insert_dim_task_source",
                     sql = sql_stmts.insert_dim_task,
-                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":group_id}
+                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": "dfs_pipeline", "task_name":group_id}
                 )
             
             source_id = BashOperator(
@@ -42,7 +42,7 @@ class TaskBuilder():
                         ]
                     ),
                 bash_command=f"cd {self.dbt_path}" # Go to the path containing your dbt project
-                + f" && dbt build --models {node_info['name']} ", # run the model!
+              #  + f" && dbt build --models {node_info['name']} ", # run the model!
                 )
 
             
@@ -57,7 +57,7 @@ class TaskBuilder():
             insert_dim_task_model =  SnowflakeOperator(
                     task_id = "insert_dim_task_model",
                     sql = sql_stmts.insert_dim_task,
-                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": tg.dag_id, "task_name":group_id}
+                    params = {"table_name":SNOWFLAKE_DIM_TASK_TABLE, "pipeline_id": "dfs_pipeline", "task_name":group_id}
                 )
             node_id = BashOperator(
                 task_id= ".".join(
@@ -69,7 +69,7 @@ class TaskBuilder():
                 ),
 
                 bash_command=f"cd {self.dbt_path}" # Go to the path containing your dbt project
-                + f" && dbt build --models {node_info['name']} ", # run the model!
+               # + f" && dbt build --models {node_info['name']} ", # run the model!
             )
            
             insert_dim_task_model >> node_id 

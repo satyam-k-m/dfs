@@ -51,6 +51,10 @@ with division as (
         run_dt,
         SHA2_HEX(DIV_NBR) as surr_key,
         to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_dvsn') }}
+
+        {% if is_incremental() %}
+            where run_dt = to_date('{{ var("run_ts") }}')
+        {% endif %}
 )
 
 select * from division

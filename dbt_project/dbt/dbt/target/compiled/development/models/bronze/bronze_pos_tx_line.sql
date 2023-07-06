@@ -60,6 +60,10 @@ with POS_TX_LINE as (
         run_dt,
         SHA2_HEX(concat_ws('~',sale_line_nbr,tx_nbr,term_nbr,divison_number,pos_loc_id,div_nbr)) as surr_key,
         to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_pos_tx_ln
+
+        
+            where run_dt = to_date('2023-06-22')
+        
 )
 
 select * from POS_TX_LINE

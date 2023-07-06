@@ -49,6 +49,7 @@ create_fct_task = """
             pipeline_id VARCHAR(25),
             run_id VARCHAR(100),
             task_id VARCHAR(100),
+            task_name VARCHAR(100),
             run_ts TIMESTAMP,
             start_ts TIMESTAMP,
             end_ts TIMESTAMP,
@@ -69,7 +70,7 @@ insert_dim_task = """
             landing_directory,
             file_naming_pattern,
             active_status_ind )
-        VALUES ('{{params.pipeline_id}}', INSIGHT_DEV.INS_BKP.TASK_ID_SEQ.nextval , '{{params.task_name}}', 'input/', '*csv', 'Y'
+        VALUES ('{{params.pipeline_id}}', INSIGHT_DEV.INS_BKP.TASK_ID.nextval , '{{params.task_name}}', 'external/', '*csv', 'Y'
         );
 """
 
@@ -79,7 +80,7 @@ insert_dim_pipeline = """
         (pipeline_id,
             pipeline_name,
             active_status_ind)
-        VALUES ( INSIGHT_DEV.INS_BKP.PIPELINE_ID_SEQ.nextval,  '{{params.pipeline_name}}', 'Y'
+        VALUES ( INSIGHT_DEV.INS_BKP.PIPELINE_ID.nextval,  '{{params.pipeline_name}}', 'Y'
         );
 """
 
@@ -88,34 +89,11 @@ read_dim_table = """
         SELECT * FROM INSIGHT_DEV.INS_BKP.{{params.table_name}}
 """
 
-insert_pipeline_status = """
-        INSERT INTO INSIGHT_DEV.INS_BKP.{{params.table_name}}
-        (
-         pipeline_id,
-            run_id,
-            run_ts,
-            end_ts,
-            duration,
-            status_cd,
-            error_message,
-            error_cd,
-            created_ts,
-            created_by,
-            modified_ts,
-            modified_by
-
-        )
-        VALUES (
-        '{{params.pipeline_id}}', '{{params.run_id}}','{{params.run_ts}}', '{{params.end_ts}}',
-        '{{params.duration}}', '{{params.status_cd}}', '{{params.error_message}}', '{{params.error_cd}}',
-        '{{params.created_ts}}', '{{params.created_by}}', '{{params.modified_ts}}', '{{params.modified_by}}'
-        )
-"""
 
 insert_task_status = """
     INSERT INTO INSIGHT_DEV.INS_BKP.{{params.fact_table_name}}
-        (pipeline_id, task_id, run_id, run_ts,  start_ts, end_ts, duration, status_cd, error_message, error_cd)
-        select pipeline_id, task_id,null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, 
+        (pipeline_id, task_id, task_name, run_id, run_ts,  start_ts, end_ts, duration, status_cd, error_message, error_cd)
+        select pipeline_id, task_id,task_name, null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, 
         null as error_message,null as error_cd
         from INSIGHT_DEV.INS_BKP.{{params.dim_table_name}}
         where pipeline_id='{{params.pipeline_id}}'
@@ -125,10 +103,10 @@ insert_task_status = """
 
 insert_pipeline_status = """
     INSERT INTO INSIGHT_DEV.INS_BKP.{{params.fact_table_name}}
-        select pipeline_id,null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, null as error_message,null as error_cd,
+        select pipeline_name as pipeline_id, null as run_id, '{{params.run_ts}}' as run_ts, null as start_ts,null as end_ts,null as duration, 'Pending' as status, null as error_message,null as error_cd,
         null as created_ts, null as created_by, null as modified_ts, null as modified_by
         from INSIGHT_DEV.INS_BKP.{{params.dim_table_name}}
-        where pipeline_id='{{params.pipeline_id}}'
+        where pipeline_name='{{params.pipeline_id}}'
         
 """
 
@@ -142,7 +120,7 @@ update_task_status_pre = """
 
         WHERE 
             tsk.pipeline_id =  '{{params.pipeline_id}}' AND
-            tsk.task_id = '{{params.task_id}}' AND
+            tsk.task_name= '{{params.task_id}}' AND
             tsk.run_ts = '{{params.run_ts}}'
 
 """
@@ -155,7 +133,7 @@ update_task_status_post = """
 
         WHERE 
             pipeline_id =  '{{params.pipeline_id}}' AND 
-            task_id = '{{params.task_id}}' AND
+            task_name = '{{params.task_id}}' AND
             run_ts = '{{params.run_ts}}';
         
         UPDATE INSIGHT_DEV.INS_BKP.{{params.task_table_name}}
@@ -164,7 +142,7 @@ update_task_status_post = """
 
         WHERE 
             pipeline_id =  '{{params.pipeline_id}}' AND 
-            task_id = '{{params.task_id}}' AND
+            task_name = '{{params.task_id}}' AND
             run_ts = '{{params.run_ts}}'
 
 """
@@ -222,4 +200,3 @@ test_snowflake_query = """
         %(run_id)s
        )
 """
-

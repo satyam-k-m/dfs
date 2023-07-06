@@ -1,5 +1,6 @@
 
 
+
 with CHRG_INFRMTN as (
      select
 		value:c1:: NUMBER(38,0) AS PAY_LINE_NBR,
@@ -17,6 +18,10 @@ with CHRG_INFRMTN as (
         run_dt,
         SHA2_HEX(concat_ws('~',pay_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
         to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_chrg_info
+
+        
+            where run_dt = to_date('2023-06-22')
+        
 )
 
 select * from CHRG_INFRMTN
