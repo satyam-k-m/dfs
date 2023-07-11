@@ -37,6 +37,8 @@ class CustomWasbSensor(BaseSensorOperator):
         if len(matched_tggr_file) > 0:
             return matched_tggr_file
 
+
+
 def parse_ctrl_files(ti=None, **context):
     data_files_list = []
     control_file_list = ti.xcom_pull(key="ctrl_files_list",task_ids="get_the_control_files")
@@ -120,14 +122,18 @@ def validate_data_files(data_files_list,tggr_file_list,control_file_list):
 
 def process_blobs(ti=None,**context):
     tggr_name=ti.xcom_pull(key="matched_tggr_file", task_ids="waiting_for_trigger_file")
-    c_tggr = tggr_name[0].split(".")[-1]
-    pattern = f"{c_tggr}.CF"
-    blob_list = CONTAINER_CLIENT.list_blobs()
-    matched_ctrl_files = []
-    for blob in blob_list:
-        if blob.name.endswith(pattern):
-            matched_ctrl_files.append(blob.name)
-    print(matched_ctrl_files)
+    ctrl_files = []
+    for tggr_file in tggr_name:
+        cotrol_file_path = tggr_file.split('/')[0].join(tggr_file.split("/")[1])
+        division = tggr_file.split("/")[1]
+        pattern = f"{division}.CF"
+        blob_list = CONTAINER_CLIENT.list_blobs(parse_control_files)
+        matched_ctrl_files = []
+        for blob in blob_list:
+            if blob.name.endswith(pattern):
+                matched_ctrl_files.append(blob.name)
+        print(matched_ctrl_files)
+
     ti.xcom_push(key="ctrl_files_list",value=matched_ctrl_files)
 
 with DAG(

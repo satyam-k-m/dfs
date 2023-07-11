@@ -21,7 +21,7 @@ SNOWFLAKE_FCT_TASKS_TABLE = "fct_task"
 SNOWFLAKE_CONN_ID = "snowflake_default"
 
 HOME = os.environ["HOME"] # retrieve the location of your home folder
-dbt_path = os.path.join(HOME,  "dfs/dbt_project/dbt/dbt/dbt/") # path to your dbt project
+dbt_path = os.path.join(HOME,  "dfs/dbt_project/dbt/dbt/") # path to your dbt project
 manifest_path = os.path.join(HOME, "dfs/dbt_project/dbt/dbt/target/manifest.json") # path to manifest.json
 print(HOME)
 
@@ -85,7 +85,7 @@ with DAG(
         insert_into_dim_pipeline_table = SnowflakeOperator(
         task_id="insert_dim_pipeline_table",
         sql=sql_stmts.insert_dim_pipeline,
-        params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE, "pipeline_id": dag.dag_id, "pipeline_name":"dbt_airflow"},
+        params={"table_name": SNOWFLAKE_DIM_PIPELLINE_TABLE, "pipeline_name":"dfs_pipeline"},
         )
 
         create_dim_pipeline_table >> create_dim_task_table >> insert_into_dim_pipeline_table

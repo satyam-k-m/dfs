@@ -119,18 +119,18 @@ with DAG(
             sql = sql_stmts.insert_pipeline_status,
             params = {"fact_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, 
                       "dim_table_name":SNOWFLAKE_DIM_PIPELINE_TABLE, 
-                      "pipeline_id": dag.dag_id, "run_ts":start_date_var }
+                      "pipeline_name": dag.dag_id, "run_ts":start_date_var }
         )
         insert_task_fact = SnowflakeOperator(
             task_id = "insert_fct_task",
             sql = sql_stmts.insert_task_status,
             params = {"fact_table_name":SNOWFLAKE_FCT_TASKS_TABLE, 
                       "dim_table_name":SNOWFLAKE_DIM_TASK_TABLE, 
-                      "pipeline_id": dag.dag_id,"run_ts":start_date_var }
+                      "pipeline_name": dag.dag_id,"run_ts":start_date_var }
         )
 
 
-        refresh_stage >>  refresh_staging_tables >>read_config_table >> [create_fact_pipeline, create_fact_task]  
+        refresh_stage >>read_config_table >> [create_fact_pipeline, create_fact_task]  
         read_config_table >> [insert_pipeline_fact, insert_task_fact]
 
 
@@ -138,13 +138,13 @@ with DAG(
         task_id = "update_fct_pipeline_pre_execution",
         sql = sql_stmts.update_pipeline_status_pre,
         params = {"table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "status_cd":"running", 
-                  "pipeline_id":dag.dag_id, "run_ts":start_date_var}
+                   "run_ts":start_date_var}
     )
     update_fact_pipeline_post = SnowflakeOperator(
         task_id = "update_fct_pipeline_post_execution",
         sql = sql_stmts.update_pipeline_status_post,
         params = {"table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "status_cd":"success", 
-                  "pipeline_id":dag.dag_id, "run_ts":start_date_var}
+                 "run_ts":start_date_var}
     )
 
 

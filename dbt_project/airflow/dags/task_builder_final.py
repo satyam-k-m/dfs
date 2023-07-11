@@ -35,7 +35,7 @@ class TaskBuilder():
             update_pre_status = SnowflakeOperator(
                 task_id = "update_fct_task_pre_execution",
                 sql = sql_stmts.update_task_status_pre,
-                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE,  "pipeline_id":tg.dag_id,"task_id":group_id,
+                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "task_name":group_id,
                         "run_ts":self.run_ts, "status_cd":"running",
                        }
             )
@@ -55,7 +55,7 @@ class TaskBuilder():
             update_post_status = SnowflakeOperator(
                 task_id = "update_fct_task_post_execution",
                 sql = sql_stmts.update_task_status_post,
-                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "pipeline_id":tg.dag_id, "task_id":group_id,
+                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "task_name":group_id,
                         "run_ts":self.run_ts, "status_cd":"success",
                 }
             )
@@ -72,7 +72,7 @@ class TaskBuilder():
             update_pre_status = SnowflakeOperator(
                 task_id = "update_fct_task_pre_execution",
                 sql = sql_stmts.update_task_status_pre,
-                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE,  "pipeline_id":tg.dag_id, "task_id":group_id,
+                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "task_name":group_id,
                          "run_ts":self.run_ts, "status_cd":"running",
                         }
             )
@@ -92,7 +92,7 @@ class TaskBuilder():
             update_post_status = SnowflakeOperator(
                 task_id = "update_fct_task_post_execution",
                 sql = sql_stmts.update_task_status_post,
-                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE, "pipeline_id":tg.dag_id, "task_id":group_id,
+                params = {"task_table_name": SNOWFLAKE_FCT_TASKS_TABLE, "pipeline_table_name":SNOWFLAKE_FCT_PIPELINE_TABLE,  "task_name":group_id,
                         "run_ts":self.run_ts, "status_cd":"sucess"
                         }
             )
