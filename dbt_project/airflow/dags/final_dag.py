@@ -42,9 +42,6 @@ with open(manifest_path) as f: # Open manifest.json
 
 # Build an Airflow DAG
 
-def set_dag_vars():
-    Variable.set("start_date_var", pendulum.now())
-
 
 with DAG(
   dag_id="dfs_pipeline", # The name that shows up in the UI
@@ -52,11 +49,8 @@ with DAG(
   catchup=False,
 ) as dag:
     
-    python_op = PythonOperator(
-        task_id="set_dag_vars",
-        python_callable=set_dag_vars
-    )
-
+    Variable.set("start_date_var", pendulum.now())
+   
     start_date_var = Variable.get("start_date_var")
     with TaskGroup("dbt_task_group") as dbt_tg:
         task_builder = TaskBuilder(nodes, sources, dbt_path, start_date_var)
@@ -148,7 +142,7 @@ with DAG(
     )
 
 
-    python_op >> tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
+    tg >> update_fact_pipeline_pre >> dbt_tg >> update_fact_pipeline_post
 
 if __name__ == "__main__":
   dag.cli()

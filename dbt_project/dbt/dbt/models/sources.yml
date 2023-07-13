@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: dfs_stage
     description: staging source in the snowflake schema
-    database: insight_dev
-    schema: ins_bkp
+    database: DFS_POC_DB
+    schema: P_DATA
     tables:
       - name: ext_chrg_info
         description: Source table for Charging info
@@ -16,7 +16,7 @@ sources:
           - name: value
             description: contains variant columns capturing all the columns
 
-      - name: ext_dvsn
+      - name: ext_divison
         description: Source table for division info
         columns:
           - name: run_dt
@@ -26,7 +26,7 @@ sources:
           - name: value
             description: contains variant columns capturing all the columns
 
-      - name: ext_lcl_crrncy
+      - name: ext_lcl_currency
         description: Source table for LOCAL_CURRENCY info
         columns:
           - name: RUN_DT

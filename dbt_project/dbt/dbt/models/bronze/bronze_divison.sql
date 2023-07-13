@@ -50,7 +50,7 @@ with division as (
         division,
         run_dt,
         SHA2_HEX(DIV_NBR) as surr_key,
-        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_dvsn') }}
+        to_timestamp('{{ var("run_ts") }}') as run_ts  from {{source('dfs_stage','ext_divison') }}
 
         {% if is_incremental() %}
             where run_dt = to_date('{{ var("run_ts") }}')

@@ -19,7 +19,7 @@ WITH LOCAL_CURRENCY AS (
         RUN_DT,
         SHA2_HEX(CONCAT_WS('~',CURR_CD,DIV_NBR)) AS SURR_KEY,
         TO_TIMESTAMP('{{ var("run_ts") }}') AS RUN_TS
-    FROM {{ source('dfs_stage', 'ext_lcl_crrncy') }}
+    FROM {{ source('dfs_stage', 'ext_lcl_currency') }}
 
     {% if is_incremental() %}
             where run_dt = to_date('{{ var("run_ts") }}')

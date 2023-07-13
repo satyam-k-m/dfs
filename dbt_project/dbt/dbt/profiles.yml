@@ -2,13 +2,13 @@ default:
     outputs:
 
       dev:
-        account:  cv97759-dfs
-        database: insight_dev
-        password: baba_BOBBY1988
-        role: INSIGHT_DEV_USER
-        schema: INS_BKP
+        account:  OEGXSYF-RACKSPACE_PARTNER
+        database: DFS_POC_DB
+        password: Sattu@1998
+        role: DATA_ENG
+        schema: P_DATA
         threads: 1
         type: snowflake
-        user: agnit.chatterjee@dfs.com
-        warehouse: WH_INSIGHT_NONPROD_SYSTM_ETL
+        user: satyamkumar
+        warehouse: dev_poc_wh
     target: dev

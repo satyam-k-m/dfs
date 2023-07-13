@@ -47,7 +47,7 @@ with pos_tx as (
 		division,
 		run_dt,
 		SHA2_HEX(concat_ws('~',TX_NBR,POS_LOC_ID,DIV_NBR,TERM_NBR)) as surr_key,
-		to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_pos_tx
+		to_timestamp('2023-06-22') as run_ts  from DFS_POC_DB.P_DATA.ext_pos_tx
 
 		
             where run_dt = to_date('2023-06-22')

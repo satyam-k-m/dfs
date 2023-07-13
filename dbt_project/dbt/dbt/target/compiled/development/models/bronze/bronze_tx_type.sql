@@ -9,7 +9,7 @@ with TX_TYPE as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',div_nbr,app_cd,tx_type)) as surr_key,
-        to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_tx_type
+        to_timestamp('2023-06-22') as run_ts  from DFS_POC_DB.P_DATA.ext_tx_type
 
         
             where run_dt = to_date('2023-06-22')

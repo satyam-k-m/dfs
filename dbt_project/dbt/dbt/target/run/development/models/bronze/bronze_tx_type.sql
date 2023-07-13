@@ -10,8 +10,8 @@
 
     
 
-    merge into insight_dev.INS_BKP.bronze_tx_type as DBT_INTERNAL_DEST
-        using insight_dev.INS_BKP.bronze_tx_type__dbt_tmp as DBT_INTERNAL_SOURCE
+    merge into DFS_POC_DB.P_DATA.bronze_tx_type as DBT_INTERNAL_DEST
+        using DFS_POC_DB.P_DATA.bronze_tx_type__dbt_tmp as DBT_INTERNAL_SOURCE
         on (
                 DBT_INTERNAL_SOURCE.surr_key = DBT_INTERNAL_DEST.surr_key
             )

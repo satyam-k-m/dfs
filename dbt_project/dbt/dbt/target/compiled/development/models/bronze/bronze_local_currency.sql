@@ -12,7 +12,7 @@ WITH LOCAL_CURRENCY AS (
         RUN_DT,
         SHA2_HEX(CONCAT_WS('~',CURR_CD,DIV_NBR)) AS SURR_KEY,
         TO_TIMESTAMP('2023-06-22') AS RUN_TS
-    FROM insight_dev.ins_bkp.ext_lcl_crrncy
+    FROM DFS_POC_DB.P_DATA.ext_lcl_currency
 
     
 )

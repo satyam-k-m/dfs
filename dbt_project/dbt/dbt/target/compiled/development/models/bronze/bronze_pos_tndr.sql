@@ -20,7 +20,7 @@ with POS_TNDR as (
         division,
         run_dt,
         SHA2_HEX(concat_ws('~',pay_line_nbr,tx_nbr,term_nbr,div_nbr,pos_loc_id)) as surr_key,
-        to_timestamp('2023-06-22') as run_ts  from insight_dev.ins_bkp.ext_pos_tndr
+        to_timestamp('2023-06-22') as run_ts  from DFS_POC_DB.P_DATA.ext_pos_tndr
 
 		
             where run_dt = to_date('2023-06-22')
