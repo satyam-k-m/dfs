@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: dfs_stage
     description: staging source in the snowflake schema
-    database: DFS_POC_DB
-    schema: P_DATA
+    database: insight_dev
+    schema: ins_bkp
     tables:
       - name: ext_chrg_info
         description: Source table for Charging info
@@ -16,7 +16,7 @@ sources:
           - name: value
             description: contains variant columns capturing all the columns
 
-      - name: ext_divison
+      - name: ext_dvsn
         description: Source table for division info
         columns:
           - name: run_dt
@@ -26,7 +26,7 @@ sources:
           - name: value
             description: contains variant columns capturing all the columns
 
-      - name: ext_lcl_currency
+      - name: ext_lcl_crrncy
         description: Source table for LOCAL_CURRENCY info
         columns:
           - name: RUN_DT
@@ -135,3 +135,28 @@ sources:
             description: division
           - name: VALUE
             description: contains variant columns capturing all the columns
+
+      - name: STORE
+        description: Store fact table
+      - name: CLSFCTN_VLU
+        description: CLSFCTN_VLU fact table
+      - name: RSKU_VRNT
+        description: RSKU_VRNT fact table
+      - name: CSKU
+        description: CSKU fact table
+      - name: RSKU
+        description: RSKU fact table
+      - name: ORDR_HDR
+        description: ORDR_HRDR fact table
+      - name: EMPLYMNT_PSTN
+        description: EMPLYMNT_PSTN fact table
+      - name: NTNLTY
+        description: NTNLTY fact table
+      - name: CRRNCY
+        description: CRRNCY fact table
+      - name: TX_HR
+        description: TX_HR fact table
+      - name: DVSN
+        description: Division fact table     
+      - name: POS_SHOP
+        description: POS_SHOP fact table  
