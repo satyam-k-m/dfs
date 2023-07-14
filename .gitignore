@@ -1,2 +1,3 @@
 *.pyc
 *.log
+dbt_project/airflow/logs/*
