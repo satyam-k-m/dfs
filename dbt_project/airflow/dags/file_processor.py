@@ -87,6 +87,7 @@ class FileProcessor():
 
         for ctrl_file_name in control_files_list:
             print("Moving CONTROLS file to archive folder")
+            ctrl_file_name = ctrl_file_name.split("/")[-1]
             destination_folder = 'archived'
             self.move_files_to_folder(ctrl_file_name, destination_folder)
 

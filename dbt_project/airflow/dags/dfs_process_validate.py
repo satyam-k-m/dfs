@@ -40,16 +40,17 @@ class CustomHook(WasbHook):
 class CustomWasbSensor(BaseSensorOperator):
     def poke(self, context):
         prefix = "some/constant/prefix/"
-        pattern = r".*TRGGR.*"
+        pattern = r".*TRGGR.[a-zA-Z]+$"
+
         ti = context['task_instance']
         provide_context=True,
-        hook = CustomHook('azure_blob') 
-        files = hook.get_blob_list_recursive("datafiles") 
+        hook = CustomHook('azure_blob')
+        files = hook.get_blob_list_recursive(CONTAINER_NAME) 
         matched_tggr_file = list(filter(lambda file: match(pattern, file), files))
         print(matched_tggr_file)
         
         if len(matched_tggr_file) > 0:
-            Variable.set(key="tggr_file_list",value=matched_tggr_file)
+            Variable.set(key="tggr_file_list",value=matched_tggr_file, serialize_json=True)
             ti.xcom_push(key='matched_tggr_file', value=matched_tggr_file)
             return matched_tggr_file
 
@@ -75,16 +76,14 @@ with DAG(
     )
 
     with TaskGroup("dynamic_task_group") as process_task_group:
-        dynamic_tasks = []
 
-        # Use the list returned by generate_list_task
-        #trigger_file_list = Variable.get("trigger_file_list")
         trigger_file_list = Variable.get("tggr_file_list", 
-                                        default_var=["sample/mac/tggr_file"])
+                                default_var=["sample/mac/tggr_file"],
+                                deserialize_json=True
+                                )
         print(trigger_file_list)
-        
-        trigger_file_list = ['pos/mac/INS.DI.MCS_TRGGR.MAC', 'sales/mac/INS.DI.MCS_TRGGR.MAC']
         for tggr_file in trigger_file_list:
+
             division = tggr_file.split("/")[1]
             source = tggr_file.split("/")[0]
             # division='mac'
@@ -96,8 +95,8 @@ with DAG(
             #dynamic_tasks.append(task)
 
             trigger_dbt_dag = TriggerDagRunOperator(
-            task_id = f'trigger_dbt_{source}_{division}',
-            trigger_dag_id = f'dbt_process_{source}_{division}'
+            task_id = f'trigger_dbt_{source.upper()}_{division.upper()}',
+            trigger_dag_id = f'dbt_process_{source.upper()}_{division.upper()}'
             
             )
             task >> trigger_dbt_dag
@@ -112,7 +111,7 @@ with DAG(
 
     trigger_file_dag = TriggerDagRunOperator(
             task_id = "wait_for_trigger_file_again",
-            trigger_dag_id= "dfs_file_processor"
+            trigger_dag_id= "file_sensor_and_processor"
             
         )
     

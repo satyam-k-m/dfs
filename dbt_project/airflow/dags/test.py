@@ -1,5 +1,6 @@
-list = [1, 2, 3, 4,5, 6, 7, ]
+list_of_files = ['pos/ind/INS.DI.MCS_TRGGR.MAC', 'pos/mac/INS.DI.MCS_TRGGR.MAC', 'sales/mac/INS.DI.MCS_TRGGR.MAC']
+for tggr_file in list_of_files:
+    division = tggr_file.split("/")[1]
+    source = tggr_file.split("/")[0]
 
-list_elements = [x for x in list if x%2==0 and x%3==0]
-
-print(list_elements)
+    print(f"{division}_{source}")
